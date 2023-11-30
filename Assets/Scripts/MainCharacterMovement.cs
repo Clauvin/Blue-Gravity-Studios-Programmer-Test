@@ -31,8 +31,6 @@ public class MainCharacterMovement : MonoBehaviour
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
         MoveCharacter(moveVector);
         UpdateAnimation(moveVector);
-
-
     }
 
     private void UpdateAnimation(Vector2 moveVector)
@@ -41,13 +39,16 @@ public class MainCharacterMovement : MonoBehaviour
         {
             animator.SetFloat("X", moveVector.x);
             animator.SetFloat("Y", moveVector.y);
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
     private void MoveCharacter(Vector2 moveVector)
     {
-        
-
         //debt: should I clarify the code here further or is this enough?
         Vector3 newMoveVector = (Vector3)moveVector * constantSpeedPerSecond * Time.deltaTime;
 
