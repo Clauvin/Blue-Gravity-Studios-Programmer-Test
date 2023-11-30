@@ -28,7 +28,7 @@ public class MainCharacterMovement : MonoBehaviour
 
     private void MoveCharacter(Vector2 moveVector)
     {
-        Vector3 newMoveVector = (Vector3)moveVector;
+        Vector3 newMoveVector = (Vector3)moveVector * Time.deltaTime;
 
         Vector3 oldCharacterPosition = GetComponent<Transform>().position;
 
