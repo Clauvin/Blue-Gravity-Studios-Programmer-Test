@@ -9,6 +9,8 @@ public class MainCharacterMovement : MonoBehaviour
 
     private InputAction moveAction;
 
+    public float constantSpeedPerSecond = 3.0f;
+
     void Awake()
     {
         moveAction = actions.FindActionMap("Main Character Movement").FindAction("movement");
@@ -28,7 +30,8 @@ public class MainCharacterMovement : MonoBehaviour
 
     private void MoveCharacter(Vector2 moveVector)
     {
-        Vector3 newMoveVector = (Vector3)moveVector * Time.deltaTime;
+        //debt: should I clarify the code here further or is this enough?
+        Vector3 newMoveVector = (Vector3)moveVector * constantSpeedPerSecond * Time.deltaTime;
 
         Vector3 oldCharacterPosition = GetComponent<Transform>().position;
 
