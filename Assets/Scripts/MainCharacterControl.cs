@@ -13,7 +13,7 @@ public class MainCharacterControl : MonoBehaviour
 
     private Rigidbody2D rigidbody2D;
 
-    private BoxCollider2D eventCollider2D;
+    private GameObject eventCollider2DObject;
 
     [Range(0, 10)]
     public float constantSpeedPerSecond = 3.0f;
@@ -26,7 +26,7 @@ public class MainCharacterControl : MonoBehaviour
 
         rigidbody2D = GetComponent<Rigidbody2D>();
 
-        eventCollider2D = GetComponentInChildren<BoxCollider2D>();
+        eventCollider2DObject = GetComponentInChildren<BoxCollider2D>().gameObject;
     }
 
     void Start()
@@ -67,7 +67,10 @@ public class MainCharacterControl : MonoBehaviour
 
             Debug.Log(xOffset + " " + yOffset);
 
-            eventCollider2D.offset.Set(xOffset, yOffset);
+            eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
+
+
+            Debug.Log("e = " + eventCollider2DObject.GetComponent<BoxCollider2D>().offset);
         }
     }
 
