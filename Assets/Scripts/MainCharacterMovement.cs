@@ -9,6 +9,7 @@ public class MainCharacterMovement : MonoBehaviour
 
     private InputAction moveAction;
 
+    [Range(0, 10)]
     public float constantSpeedPerSecond = 3.0f;
 
     void Awake()
