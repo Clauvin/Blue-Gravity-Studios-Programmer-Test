@@ -31,7 +31,7 @@ public class MainCharacterControl : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void FixedUpdate()
@@ -54,6 +54,7 @@ public class MainCharacterControl : MonoBehaviour
 
     private void MoveEventColliderBox(Vector2 moveVector)
     {
+        
         if (moveVector.x != 0 || moveVector.y != 0)
         {
             float xOffset = 0f, yOffset = 0f;
@@ -63,6 +64,8 @@ public class MainCharacterControl : MonoBehaviour
             
             if (moveVector.y < 0) { yOffset = -0.24f; }
             else if (moveVector.y > 0) { yOffset = 0.24f; }
+
+            Debug.Log(xOffset + " " + yOffset);
 
             eventCollider2D.offset.Set(xOffset, yOffset);
         }
