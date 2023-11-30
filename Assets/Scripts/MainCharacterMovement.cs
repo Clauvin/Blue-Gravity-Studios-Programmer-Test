@@ -22,7 +22,19 @@ public class MainCharacterMovement : MonoBehaviour
     void Update()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
-        Debug.Log(moveVector.x + " " + moveVector.y);
+        MoveCharacter(moveVector);
+        
+    }
+
+    private void MoveCharacter(Vector2 moveVector)
+    {
+        Vector3 newMoveVector = (Vector3)moveVector;
+
+        Vector3 oldCharacterPosition = GetComponent<Transform>().position;
+
+        Vector3 newCharacterPosition = oldCharacterPosition + newMoveVector;
+
+        GetComponent<Transform>().position = newCharacterPosition;
     }
 
     void OnEnable()
