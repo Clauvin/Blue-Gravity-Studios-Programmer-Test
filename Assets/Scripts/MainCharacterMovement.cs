@@ -11,6 +11,8 @@ public class MainCharacterMovement : MonoBehaviour
 
     private Animator animator;
 
+    private Rigidbody2D rigidbody2D;
+
     [Range(0, 10)]
     public float constantSpeedPerSecond = 3.0f;
 
@@ -19,6 +21,8 @@ public class MainCharacterMovement : MonoBehaviour
         moveAction = actions.FindActionMap("Main Character Movement").FindAction("movement");
 
         animator = GetComponent<Animator>();
+
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void Start()
@@ -26,7 +30,7 @@ public class MainCharacterMovement : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
         MoveCharacter(moveVector);
@@ -50,13 +54,11 @@ public class MainCharacterMovement : MonoBehaviour
     private void MoveCharacter(Vector2 moveVector)
     {
         //debt: should I clarify the code here further or is this enough?
-        Vector3 newMoveVector = (Vector3)moveVector * constantSpeedPerSecond * Time.deltaTime;
+        Vector2 newMoveVector = moveVector * constantSpeedPerSecond * Time.fixedDeltaTime;
 
-        Vector3 oldCharacterPosition = GetComponent<Transform>().position;
+        Vector2 oldRigidBodyPosition = rigidbody2D.position;
 
-        Vector3 newCharacterPosition = oldCharacterPosition + newMoveVector;
-
-        GetComponent<Transform>().position = newCharacterPosition;
+        rigidbody2D.MovePosition(rigidbody2D.position + newMoveVector);
     }
 
     void OnEnable()
