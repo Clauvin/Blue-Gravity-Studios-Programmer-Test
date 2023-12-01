@@ -62,18 +62,15 @@ public class MainCharacterControl : MonoBehaviour
         if (moveVector.x != 0 || moveVector.y != 0)
         {
             float xOffset = 0f, yOffset = 0f;
+            float defaultOffsetValue = 0.18f;
 
-            if (moveVector.x < 0) { xOffset = -0.24f; }
-            else if (moveVector.x > 0) { xOffset = 0.24f; }
+            if (moveVector.x < 0) { xOffset = -defaultOffsetValue; }
+            else if (moveVector.x > 0) { xOffset = defaultOffsetValue; }
             
-            if (moveVector.y < 0) { yOffset = -0.24f; }
-            else if (moveVector.y > 0) { yOffset = 0.24f; }
-
-            Debug.Log(xOffset + " " + yOffset);
+            if (moveVector.y < 0) { yOffset = -defaultOffsetValue; }
+            else if (moveVector.y > 0) { yOffset = defaultOffsetValue; }
 
             eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
-
-            Debug.Log("e = " + eventCollider2DObject.GetComponent<BoxCollider2D>().offset);
         }
     }
 
