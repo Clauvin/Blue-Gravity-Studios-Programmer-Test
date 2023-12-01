@@ -32,6 +32,8 @@ public class MainCharacterControl : MonoBehaviour
     {
         Debug.Log(who + " sets main character isInteracting as " + value);
         isInteracting = value;
+        if (isInteracting) { DisableMovementActions(); }
+        else { EnableMovementActions(); }
     }
 
     void Awake()
@@ -70,7 +72,6 @@ public class MainCharacterControl : MonoBehaviour
         }
 
         UpdateAnimation(moveVector);
-
     }
 
     private void MoveCharacter(Vector2 moveVector)
@@ -113,6 +114,16 @@ public class MainCharacterControl : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
+    }
+
+    private void EnableMovementActions()
+    {
+        actions.FindActionMap(nameOfActionMap).FindAction(nameOfMovementAction).Enable();
+    }
+
+    private void DisableMovementActions()
+    {
+        actions.FindActionMap(nameOfActionMap).FindAction(nameOfMovementAction).Disable();
     }
 
 
