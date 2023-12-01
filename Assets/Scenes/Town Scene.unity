@@ -1617,7 +1617,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2753718018764665327, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_Name
-      value: Dialogue System
+      value: Yarn Spinner Dialogue System
       objectReference: {fileID: 0}
     - target: {fileID: 3183266951831634833, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_RootOrder
@@ -1694,7 +1694,7 @@ PrefabInstance:
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: ae4370242c8637a479b408487f643436, type: 3}
+      objectReference: {fileID: 7545569452688597077, guid: 57997a850e3569b408d67aa61b89bf69, type: 3}
     - target: {fileID: 7778558434935992803, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -33280,7 +33280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3476826197384326432, guid: 85e1dd4dd14c3bd41b10fa1e8c1b6f23, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3476826197384326432, guid: 85e1dd4dd14c3bd41b10fa1e8c1b6f23, type: 3}
       propertyPath: m_LocalPosition.x
