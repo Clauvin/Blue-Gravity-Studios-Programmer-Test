@@ -8,6 +8,7 @@ public class MainCharacterControl : MonoBehaviour
     public InputActionAsset actions;
 
     private InputAction moveAction;
+    private InputAction interactAction;
 
     private Animator animator;
 
@@ -29,6 +30,8 @@ public class MainCharacterControl : MonoBehaviour
     void Awake()
     {
         InputActionMap mainCharacterActionsMap = actions.FindActionMap(nameOfActionMap);
+        moveAction = mainCharacterActionsMap.FindAction(nameOfMovementAction);
+        interactAction = mainCharacterActionsMap.FindAction(nameOfInteractAction);
 
         animator = GetComponent<Animator>();
 
@@ -49,10 +52,13 @@ public class MainCharacterControl : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
+        bool tryingToInteract = interactAction.ReadValue<bool>();
+
         if (!isInteracting)
         {
             MoveCharacter(moveVector);
             MoveEventColliderBox(moveVector);
+            TryToInteract(tryingToInteract);
             UpdateAnimation(moveVector);
         }
 
@@ -83,6 +89,14 @@ public class MainCharacterControl : MonoBehaviour
             else if (moveVector.y > 0) { yOffset = defaultOffsetValue; }
 
             eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
+        }
+    }
+
+    private void TryToInteract(bool tryingToInteract)
+    {
+        if (tryingToInteract)
+        {
+            Debug.Log(tryingToInteract);
         }
     }
 
