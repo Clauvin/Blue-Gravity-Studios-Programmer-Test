@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
 
 public class MainCharacterControl : MonoBehaviour
 {
@@ -126,6 +127,15 @@ public class MainCharacterControl : MonoBehaviour
         actions.FindActionMap(nameOfActionMap).FindAction(nameOfMovementAction).Disable();
     }
 
+    //debt: had to expose the function so we could call it through Yarn. This MAY be an issue in the future.
+    [YarnCommand("TryToEndConversationWithPlayerCharacter")]
+    public void TryToEndConversationWithPlayerCharacter()
+    {
+        if (isInteracting)
+        {
+            OutsiderSetsInteracting(this.gameObject, false);
+        }
+    }
 
     void OnEnable()
     {
