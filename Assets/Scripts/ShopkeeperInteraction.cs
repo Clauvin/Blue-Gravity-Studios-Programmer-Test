@@ -30,9 +30,9 @@ public class ShopkeeperInteraction : MonoBehaviour
 
     private void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl)
     {
-        if (characterControl.isTryingToInteract)
+        if (characterControl.isTryingToInteract && !characterControl.isInteracting)
         {
-            characterControl.OutsiderSetsInteracting(this.gameObject, true);
+            characterControl.OutsiderSetsInteracting(this.gameObject, true);        
             Debug.Log("try to start conversation");
         }
         
