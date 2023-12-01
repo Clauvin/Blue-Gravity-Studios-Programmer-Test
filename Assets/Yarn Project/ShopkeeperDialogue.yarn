@@ -30,4 +30,5 @@ Shopkeeper: So, what you came to do in our tiny island?
 title: Bye
 ---
 Shopkeeper: See ya later, and thanks for your service!
+<<TryToEndConversationWithPlayerCharacter "Main Character" "Main Character Control">>
 ===
