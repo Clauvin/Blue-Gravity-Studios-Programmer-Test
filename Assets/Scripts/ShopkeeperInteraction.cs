@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class ShopkeeperInteraction : MonoBehaviour
-{   
+{
+    private const string startingConversationNode = "Start";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +35,8 @@ public class ShopkeeperInteraction : MonoBehaviour
     {
         if (characterControl.isTryingToInteract && !characterControl.isInteracting)
         {
-            characterControl.OutsiderSetsInteracting(this.gameObject, true);        
-            Debug.Log("try to start conversation");
+            characterControl.OutsiderSetsInteracting(this.gameObject, true);
+            GetComponentInChildren<DialogueRunner>().StartDialogue(startingConversationNode);
         }
         
     }
