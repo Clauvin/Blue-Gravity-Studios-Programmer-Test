@@ -16,13 +16,30 @@ public class ShopkeeperInteraction : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("entered " + collision);
+        MainCharacterControl mainCharacterControl = GetMainCharacterFromCollider(collider);
+        TryToStartConversationWithPlayerCharacter(mainCharacterControl);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collider)
     {
-        Debug.Log("stay " + collision);
+        MainCharacterControl mainCharacterControl = GetMainCharacterFromCollider(collider);
+        TryToStartConversationWithPlayerCharacter(mainCharacterControl);
+    }
+
+    private void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl)
+    {
+        if (characterControl.isTryingToInteract)
+        {
+            characterControl.OutsiderSetsInteracting(this.gameObject, true);
+            Debug.Log("try to start conversation");
+        }
+        
+    }
+
+    private MainCharacterControl GetMainCharacterFromCollider(Collider2D collider)
+    {
+        return collider.gameObject.GetComponentInParent<MainCharacterControl>();
     }
 }
