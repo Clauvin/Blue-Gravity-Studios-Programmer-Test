@@ -67,8 +67,9 @@ public class MainCharacterControl : MonoBehaviour
         {
             MoveCharacter(moveVector);
             MoveEventColliderBox(moveVector);
-            UpdateAnimation(moveVector);
         }
+
+        UpdateAnimation(moveVector);
 
     }
 
