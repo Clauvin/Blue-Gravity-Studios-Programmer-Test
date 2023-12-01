@@ -26,7 +26,11 @@ public class MainCharacterControl : MonoBehaviour
 
         rigidbody2D = GetComponent<Rigidbody2D>();
 
-        eventCollider2DObject = GetComponentInChildren<BoxCollider2D>().gameObject;
+        BoxCollider2D[] boxCollidersFoundOnTheMainCharacter = GetComponentsInChildren<BoxCollider2D>();
+
+        //debt: there are only two GameObjects BY NOW on the main Character. We need to be more specific in terms of how to find the
+        //  EventCollider BoxCollider2D.
+        eventCollider2DObject = boxCollidersFoundOnTheMainCharacter[boxCollidersFoundOnTheMainCharacter.Length - 1].gameObject;
     }
 
     void Start()
@@ -68,7 +72,6 @@ public class MainCharacterControl : MonoBehaviour
             Debug.Log(xOffset + " " + yOffset);
 
             eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
-
 
             Debug.Log("e = " + eventCollider2DObject.GetComponent<BoxCollider2D>().offset);
         }
