@@ -25,6 +25,7 @@ Shopkeeper: I ALSO should be able to buy things from you, but that capacity stil
 title: Chat
 ---
 Shopkeeper: So, what you came to do in our tiny island?
+<<TryToEndConversationWithPlayerCharacter "Main Character">>
 ===
 
 title: Bye
