@@ -20,6 +20,7 @@ public class MainCharacterControl : MonoBehaviour
     private float constantSpeedPerSecond = 3.0f;
 
     private bool isInteracting = false;
+    public bool isTryingToInteract { get; private set; }
 
     #region MainCharacterConsts
     private const string nameOfActionMap = "Main Character Actions";
@@ -60,11 +61,12 @@ public class MainCharacterControl : MonoBehaviour
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
         float tryingToInteract = interactAction.ReadValue<float>();
 
+        if (tryingToInteract > 0.0f) { isTryingToInteract = true; } else { isTryingToInteract = false; }
+        
         if (!isInteracting)
         {
             MoveCharacter(moveVector);
             MoveEventColliderBox(moveVector);
-            TryToInteract(tryingToInteract);
             UpdateAnimation(moveVector);
         }
 
@@ -95,14 +97,6 @@ public class MainCharacterControl : MonoBehaviour
             else if (moveVector.y > 0) { yOffset = defaultOffsetValue; }
 
             eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
-        }
-    }
-
-    private void TryToInteract(float tryingToInteract)
-    {
-        if (tryingToInteract > 0.0f)
-        {
-            Debug.Log(tryingToInteract);
         }
     }
 
