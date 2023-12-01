@@ -15,3 +15,4 @@ MonoBehaviour:
   category: {fileID: 11400000, guid: 0ebae6d0ca3c9504eab1d561bfea6a9b, type: 2}
   name: Clown Suit
   description: To make people laugh!
+  cost: 250

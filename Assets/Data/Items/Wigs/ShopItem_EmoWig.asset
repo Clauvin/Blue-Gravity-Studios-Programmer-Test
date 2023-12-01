@@ -15,3 +15,4 @@ MonoBehaviour:
   category: {fileID: 11400000, guid: 808481d9fb2d4584f92bd405b029d3e0, type: 2}
   name: Emo Wig
   description: 
+  cost: 50

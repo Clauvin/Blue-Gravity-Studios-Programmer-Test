@@ -15,3 +15,4 @@ MonoBehaviour:
   category: {fileID: 11400000, guid: 039eb27832bcb6648818421884f64811, type: 2}
   name: Pumpkin Hat
   description: Trick or treat!
+  cost: 130
