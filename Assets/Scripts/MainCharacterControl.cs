@@ -19,7 +19,7 @@ public class MainCharacterControl : MonoBehaviour
     [Range(0, 10)]
     private float constantSpeedPerSecond = 3.0f;
 
-    private bool isInteracting = false;
+    public bool isInteracting { get; private set; }
     public bool isTryingToInteract { get; private set; }
 
     #region MainCharacterConsts
