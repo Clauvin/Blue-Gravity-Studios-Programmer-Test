@@ -1,0 +1,33 @@
+﻿title: Start
+tags:
+---
+Shopkeeper: Oh, hi! Fancy day we have here today, right?
+    -> Buy
+        <<jump Buy>>
+    -> Sell
+        <<jump Sell>>
+    -> Chat
+        <<jump Chat>>
+    -> Bye
+        <<jump Bye>>
+===
+
+title: Buy
+---
+Shopkeeper: I should have things to sell to you, but the programmer is still working on those.
+===
+
+title: Sell
+---
+Shopkeeper: I ALSO should be able to buy things from you, but that capacity still have to be coded.
+===
+
+title: Chat
+---
+Shopkeeper: So, what you came to do in our tiny island?
+===
+
+title: Bye
+---
+Shopkeeper: See ya later, and thanks for your service!
+===
