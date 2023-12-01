@@ -28,7 +28,7 @@ public class MainCharacterControl : MonoBehaviour
 
     void Awake()
     {
-        moveAction = actions.FindActionMap("Main Character Movement").FindAction("movement");
+        InputActionMap mainCharacterActionsMap = actions.FindActionMap(nameOfActionMap);
 
         animator = GetComponent<Animator>();
 
@@ -103,10 +103,10 @@ public class MainCharacterControl : MonoBehaviour
 
     void OnEnable()
     {
-        actions.FindActionMap("Main Character Movement").Enable();
+        actions.FindActionMap(nameOfActionMap).Enable();
     }
     void OnDisable()
     {
-        actions.FindActionMap("Main Character Movement").Disable();
+        actions.FindActionMap(nameOfActionMap).Disable();
     }
 }
