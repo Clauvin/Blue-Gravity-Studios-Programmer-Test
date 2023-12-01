@@ -20,6 +20,12 @@ public class MainCharacterControl : MonoBehaviour
 
     public bool isInteracting = false;
 
+    #region MainCharacterConsts
+    private const string nameOfActionMap = "Main Character Actions";
+    private const string nameOfMovementAction = "movement";
+    private const string nameOfInteractAction = "interact";
+    #endregion
+
     void Awake()
     {
         moveAction = actions.FindActionMap("Main Character Movement").FindAction("movement");
