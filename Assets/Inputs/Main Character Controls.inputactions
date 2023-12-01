@@ -2,7 +2,7 @@
     "name": "Main Character Controls",
     "maps": [
         {
-            "name": "Main Character Movement",
+            "name": "Main Character Actions",
             "id": "b633b854-0cd2-4995-ab6f-0835cd0e63cc",
             "actions": [
                 {
