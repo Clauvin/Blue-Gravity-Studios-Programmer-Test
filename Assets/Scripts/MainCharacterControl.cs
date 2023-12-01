@@ -17,15 +17,21 @@ public class MainCharacterControl : MonoBehaviour
     private GameObject eventCollider2DObject;
 
     [Range(0, 10)]
-    public float constantSpeedPerSecond = 3.0f;
+    private float constantSpeedPerSecond = 3.0f;
 
-    public bool isInteracting = false;
+    private bool isInteracting = false;
 
     #region MainCharacterConsts
     private const string nameOfActionMap = "Main Character Actions";
     private const string nameOfMovementAction = "movement";
     private const string nameOfInteractAction = "interact";
     #endregion
+
+    public void OutsiderSetsInteracting(GameObject who, bool value)
+    {
+        Debug.Log(who + " sets main character isInteracting as " + value);
+        isInteracting = value;
+    }
 
     void Awake()
     {
