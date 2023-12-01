@@ -18,6 +18,8 @@ public class MainCharacterControl : MonoBehaviour
     [Range(0, 10)]
     public float constantSpeedPerSecond = 3.0f;
 
+    public bool isInteracting = false;
+
     void Awake()
     {
         moveAction = actions.FindActionMap("Main Character Movement").FindAction("movement");
@@ -41,9 +43,13 @@ public class MainCharacterControl : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
-        MoveCharacter(moveVector);
-        MoveEventColliderBox(moveVector);
-        UpdateAnimation(moveVector);
+        if (!isInteracting)
+        {
+            MoveCharacter(moveVector);
+            MoveEventColliderBox(moveVector);
+            UpdateAnimation(moveVector);
+        }
+
     }
 
     private void MoveCharacter(Vector2 moveVector)
