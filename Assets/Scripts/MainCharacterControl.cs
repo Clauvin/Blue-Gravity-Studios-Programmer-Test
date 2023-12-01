@@ -52,7 +52,7 @@ public class MainCharacterControl : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
-        bool tryingToInteract = interactAction.ReadValue<bool>();
+        float tryingToInteract = interactAction.ReadValue<float>();
 
         if (!isInteracting)
         {
@@ -92,9 +92,9 @@ public class MainCharacterControl : MonoBehaviour
         }
     }
 
-    private void TryToInteract(bool tryingToInteract)
+    private void TryToInteract(float tryingToInteract)
     {
-        if (tryingToInteract)
+        if (tryingToInteract > 0.0f)
         {
             Debug.Log(tryingToInteract);
         }
