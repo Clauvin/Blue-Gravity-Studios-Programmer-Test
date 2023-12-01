@@ -41,6 +41,17 @@ public class ShopkeeperInteraction : MonoBehaviour
         
     }
 
+    //debt: had to expose the function so we could call it through Yarn. This MAY be an issue in the future.
+    [YarnCommand("TryToEndConversationWithPlayerCharacter")]
+    public void TryToEndConversationWithPlayerCharacter(MainCharacterControl characterControl)
+    {
+        if (characterControl.isInteracting)
+        {
+            characterControl.OutsiderSetsInteracting(this.gameObject, false);
+
+        }
+    }
+
     private MainCharacterControl GetMainCharacterFromCollider(Collider2D collider)
     {
         return collider.gameObject.GetComponentInParent<MainCharacterControl>();
