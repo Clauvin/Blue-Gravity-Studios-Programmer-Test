@@ -58,6 +58,22 @@ public class ShopUI : MonoBehaviour
         {
             PurchaseButton.interactable = false;
         }
+
+        foreach (KeyValuePair<ShopItem, ShopItemPanel> kvp in shopItemToUIMap)
+        {
+            
+            ShopItem item = kvp.Key;
+            ShopItemPanel itemUI = kvp.Value;
+
+            if (currentPurchaser != null)
+            {
+                itemUI.SetCanAfford(item.cost <= currentPurchaser.GetCurrentFunds());
+            }
+            else
+            {
+                itemUI.SetCanAfford(false);
+            }
+        }
         
     }
 
