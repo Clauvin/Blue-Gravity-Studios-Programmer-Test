@@ -13,8 +13,11 @@ public class ShopUI : MonoBehaviour
 
     [SerializeField] List<ShopItem> availableItems;
 
+    ShopItemCategory selectedCategory;
+    ShopItem selectedItem;
     List<ShopItemCategory> shopCategories;
     Dictionary<ShopItemCategory, ShopCategoryPanel> shopCategoryToUIMap;
+    Dictionary<ShopItem, ShopItemPanel> shopItemToUIMap;
 
     // Start is called before the first frame update
     void Start()
@@ -50,11 +53,55 @@ public class ShopUI : MonoBehaviour
             categoryUI.Bind(category, OnCategorySelected);
             shopCategoryToUIMap[category] = categoryUI; 
         }
+
+        if (!shopCategories.Contains(selectedCategory))
+        {
+            selectedCategory = null;
+        }
+
+        OnCategorySelected(selectedCategory);
     }
 
-    void OnCategorySelected(ShopItemCategory category)
+    void OnCategorySelected(ShopItemCategory newlySelectedCategory)
     {
+        selectedCategory = newlySelectedCategory;
+        foreach(ShopItemCategory category in shopCategories)
+        {
+            shopCategoryToUIMap[category].SetIsSelected(category == selectedCategory);
+        }
 
+        RefreshShopUIItems();
+    }
+
+    void RefreshShopUIItems()
+    {
+        shopItemToUIMap = new Dictionary<ShopItem, ShopItemPanel>();
+
+        foreach(ShopItem item in availableItems)
+        {
+            if (item.category != selectedCategory)
+            {
+                continue;
+            }
+
+            GameObject itemGo = Instantiate(itemUIPrefab, itemUIRoot);
+            ShopItemPanel itemUI = itemGo.GetComponent<ShopItemPanel>();
+
+            itemUI.Bind(item, OnItemSelected);
+            shopItemToUIMap[item] = itemUI;
+        }
+    }
+
+    void OnItemSelected(ShopItem newlySelectedItem)
+    {
+        selectedItem = newlySelectedItem;
+        foreach(var kvp in shopItemToUIMap)
+        {
+            ShopItemPanel item = kvp.Value;
+            ShopItem itemUI = kvp.Key;
+
+            item.SetIsSelected(item == selectedItem);
+        }
     }
 
     public void OnClickedPurchase()
