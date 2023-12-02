@@ -34,3 +34,23 @@ title: Bye
 Shopkeeper: See ya later, and thanks for your service!
 <<TryToEndConversationWithPlayerCharacter "Main Character">>
 ===
+
+title: ThanksBuy
+---
+Shopkeeper: Thanks for checking our wares!
+<<jump AfterBuy>>
+===
+
+title: AfterBuy
+---
+Shopkeeper: Any other way I can be of assistance?
+    -> Buy
+        <<jump Buy>>
+    -> Sell
+        <<jump Sell>>
+    -> Chat
+        <<jump Chat>>
+    -> Bye
+        <<jump Bye>>
+===
+
