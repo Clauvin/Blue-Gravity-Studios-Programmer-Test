@@ -34,7 +34,7 @@ public class ShopUI : MonoBehaviour
         shopCategoryToUIMap = new Dictionary<ShopItemCategory, ShopCategoryPanel>();
         foreach(var item in availableItems)
         {
-            if (!shopCategoryToUIMap.ContainsKey(item.category))
+            if (!shopCategories.Contains(item.category))
             {
                 shopCategories.Add(item.category);
             }
@@ -47,9 +47,14 @@ public class ShopUI : MonoBehaviour
             GameObject categoryGo = Instantiate(categoryUIPrefab, categoryUIRoot);
             ShopCategoryPanel categoryUI = categoryGo.GetComponent<ShopCategoryPanel>();
 
-            categoryUI.Bind(category);
+            categoryUI.Bind(category, OnCategorySelected);
             shopCategoryToUIMap[category] = categoryUI; 
         }
+    }
+
+    void OnCategorySelected(ShopItemCategory category)
+    {
+
     }
 
     public void OnClickedPurchase()
