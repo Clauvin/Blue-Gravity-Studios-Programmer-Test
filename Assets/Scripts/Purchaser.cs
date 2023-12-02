@@ -4,15 +4,14 @@ using UnityEngine;
 
 public interface IPurchaser
 {
-    float GetCurrentFunds();
+    int GetCurrentFunds();
     bool SpendFunds(int amount);
 }
 public class Purchaser : MonoBehaviour, IPurchaser
 {
-
     [SerializeField] int currentFunds;
 
-    public float GetCurrentFunds()
+    public int GetCurrentFunds()
     {
         return currentFunds;
     }
