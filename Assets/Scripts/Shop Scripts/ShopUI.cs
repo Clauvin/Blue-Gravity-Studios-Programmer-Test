@@ -33,6 +33,13 @@ public class ShopUI : MonoBehaviour
 
     void RefreshShopUI()
     {
+        for (int childIndex = categoryUIRoot.childCount - 1; childIndex >= 0; childIndex--)
+        {
+            GameObject childGO = categoryUIRoot.GetChild(childIndex).gameObject;
+
+            Destroy(childGO);
+        }
+
         shopCategories = new List<ShopItemCategory>();
         shopCategoryToUIMap = new Dictionary<ShopItemCategory, ShopCategoryPanel>();
         foreach(var item in availableItems)
@@ -75,6 +82,13 @@ public class ShopUI : MonoBehaviour
 
     void RefreshShopUIItems()
     {
+        for (int childIndex = itemUIRoot.childCount - 1; childIndex >= 0; childIndex--)
+        {
+            GameObject childGO = itemUIRoot.GetChild(childIndex).gameObject;
+
+            Destroy(childGO);
+        }
+
         shopItemToUIMap = new Dictionary<ShopItem, ShopItemPanel>();
 
         foreach(ShopItem item in availableItems)
