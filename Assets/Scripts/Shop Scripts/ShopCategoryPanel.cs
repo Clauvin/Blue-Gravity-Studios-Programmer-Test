@@ -30,6 +30,6 @@ public class ShopCategoryPanel : MonoBehaviour
 
     public void OnClicked()
     {
-
+        onSelectFunction.Invoke(panelCategory);
     }
 }
