@@ -157,6 +157,7 @@ public class ShopUI : MonoBehaviour
 
     public void OnClickedPurchase()
     {
-
+        currentPurchaser.SpendFunds(selectedItem.cost);
+        RefreshShopUICommons();
     }
 }
