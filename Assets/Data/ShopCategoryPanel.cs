@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopCategoryPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] TextMeshProUGUI categoryName;
+    ShopItemCategory panelCategory;
 
-    // Update is called once per frame
-    void Update()
+    public void Bind(ShopItemCategory category)
     {
-        
+        panelCategory = category;
+        categoryName.text = category.Name;
     }
 }
