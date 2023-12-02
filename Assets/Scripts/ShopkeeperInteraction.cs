@@ -6,6 +6,7 @@ using Yarn.Unity;
 public interface IInteracter
 {
     public void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl, string conversationNode);
+    public void TryToContinueConversationWithPlayerCharacter(MainCharacterControl characterControl, string conversationNode);
 }
 
 public class ShopkeeperInteraction : MonoBehaviour, IInteracter
@@ -43,6 +44,12 @@ public class ShopkeeperInteraction : MonoBehaviour, IInteracter
             characterControl.OutsiderSetsInteracting(this.gameObject, true);
             GetComponentInChildren<DialogueRunner>().StartDialogue(conversationNode);
         }
+    }
+
+    public void TryToContinueConversationWithPlayerCharacter(MainCharacterControl characterControl, string conversationNode)
+    {
+        characterControl.OutsiderSetsInteracting(this.gameObject, true);
+        GetComponentInChildren<DialogueRunner>().StartDialogue(conversationNode);
     }
 
     private MainCharacterControl GetMainCharacterFromCollider(Collider2D collider)
