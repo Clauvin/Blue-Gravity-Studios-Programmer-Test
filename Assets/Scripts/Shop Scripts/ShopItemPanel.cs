@@ -39,6 +39,7 @@ public class ShopItemPanel : MonoBehaviour
     public void SetCanAfford(bool canAfford)
     {
         price.fontStyle = canAfford ? FontStyles.Normal : FontStyles.Strikethrough;
+        price.color = canAfford ? Color.white : Color.red;
     }
 
     public void OnClicked()
