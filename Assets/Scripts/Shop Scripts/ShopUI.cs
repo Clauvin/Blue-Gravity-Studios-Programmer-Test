@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class ShopUI : MonoBehaviour
 {
@@ -16,7 +17,13 @@ public class ShopUI : MonoBehaviour
 
     [SerializeField] List<ShopItem> availableItems;
 
+    public GameObject shopCanvas;
+
+    public GameObject currentInteracter;
+    public string interacterNodeOnExit;
+
     IPurchaser currentPurchaser;
+
     ShopItemCategory selectedCategory;
     ShopItem selectedItem;
 
@@ -183,6 +190,23 @@ public class ShopUI : MonoBehaviour
 
     public void OnClickedExit()
     {
-        Debug.Log("Should exit");
+        IInteracter interacter = currentInteracter.GetComponent<IInteracter>();
+        MainCharacterControl mainCharControl = GameObject.FindGameObjectWithTag("Main Character").GetComponent<MainCharacterControl>();
+
+
+
+        interacter.TryToContinueConversationWithPlayerCharacter(mainCharControl, interacterNodeOnExit);
+    }
+
+    [YarnCommand("OpenShopInterface")]
+    public void OpenShopInterface()
+    {
+        shopCanvas.SetActive(true);
+    }
+
+    [YarnCommand("CloseShopInterface")]
+    public void CloseShopInterface()
+    {
+        shopCanvas.SetActive(false);
     }
 }
