@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopUI : MonoBehaviour
 {
@@ -8,13 +9,17 @@ public class ShopUI : MonoBehaviour
     [SerializeField] Transform categoryUIRoot;
     [SerializeField] Transform itemUIRoot;
 
+    [SerializeField] Button PurchaseButton;
+
     [SerializeField] GameObject categoryUIPrefab;
     [SerializeField] GameObject itemUIPrefab;
 
     [SerializeField] List<ShopItem> availableItems;
 
+    IPurchaser currentPurchaser;
     ShopItemCategory selectedCategory;
     ShopItem selectedItem;
+
     List<ShopItemCategory> shopCategories;
     Dictionary<ShopItemCategory, ShopCategoryPanel> shopCategoryToUIMap;
     Dictionary<ShopItem, ShopItemPanel> shopItemToUIMap;
@@ -22,7 +27,9 @@ public class ShopUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RefreshShopUI();
+        currentPurchaser = FindObjectOfType<Purchaser>();
+        RefreshShopUICommons();
+        RefreshShopUICategories();
     }
 
     // Update is called once per frame
@@ -31,7 +38,30 @@ public class ShopUI : MonoBehaviour
         
     }
 
-    void RefreshShopUI()
+    void RefreshShopUICommons()
+    {
+        if (currentPurchaser != null)
+        {
+            availableFunds.text = currentPurchaser.GetCurrentFunds().ToString();
+        }
+        else
+        {
+            availableFunds.text = string.Empty;
+        }
+
+        if (currentPurchaser != null && selectedItem != null &&
+                currentPurchaser.GetCurrentFunds() >= selectedItem.cost)
+        {
+            PurchaseButton.interactable = true;
+        }
+        else
+        {
+            PurchaseButton.interactable = false;
+        }
+        
+    }
+
+    void RefreshShopUICategories()
     {
         for (int childIndex = categoryUIRoot.childCount - 1; childIndex >= 0; childIndex--)
         {
@@ -71,6 +101,11 @@ public class ShopUI : MonoBehaviour
 
     void OnCategorySelected(ShopItemCategory newlySelectedCategory)
     {
+        if (selectedCategory != null && newlySelectedCategory != null && selectedCategory != newlySelectedCategory)
+        {
+            selectedItem = null;
+        }
+
         selectedCategory = newlySelectedCategory;
         foreach(ShopItemCategory category in shopCategories)
         {
@@ -116,6 +151,8 @@ public class ShopUI : MonoBehaviour
 
             item.SetIsSelected(item == selectedItem);
         }
+
+        RefreshShopUICommons();
     }
 
     public void OnClickedPurchase()
