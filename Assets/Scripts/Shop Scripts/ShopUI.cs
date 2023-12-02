@@ -28,6 +28,7 @@ public class ShopUI : MonoBehaviour
     void Start()
     {
         currentPurchaser = FindObjectOfType<Purchaser>();
+
         RefreshShopUICommons();
         RefreshShopUICategories();
     }
@@ -59,22 +60,24 @@ public class ShopUI : MonoBehaviour
             PurchaseButton.interactable = false;
         }
 
-        foreach (KeyValuePair<ShopItem, ShopItemPanel> kvp in shopItemToUIMap)
+        if (shopItemToUIMap != null)
         {
-            
-            ShopItem item = kvp.Key;
-            ShopItemPanel itemUI = kvp.Value;
+            foreach (KeyValuePair<ShopItem, ShopItemPanel> kvp in shopItemToUIMap)
+            {
 
-            if (currentPurchaser != null)
-            {
-                itemUI.SetCanAfford(item.cost <= currentPurchaser.GetCurrentFunds());
-            }
-            else
-            {
-                itemUI.SetCanAfford(false);
+                ShopItem item = kvp.Key;
+                ShopItemPanel itemUI = kvp.Value;
+
+                if (currentPurchaser != null)
+                {
+                    itemUI.SetCanAfford(item.cost <= currentPurchaser.GetCurrentFunds());
+                }
+                else
+                {
+                    itemUI.SetCanAfford(false);
+                }
             }
         }
-        
     }
 
     void RefreshShopUICategories()
@@ -155,6 +158,8 @@ public class ShopUI : MonoBehaviour
             itemUI.Bind(item, OnItemSelected);
             shopItemToUIMap[item] = itemUI;
         }
+
+        RefreshShopUICommons();
     }
 
     void OnItemSelected(ShopItem newlySelectedItem)
@@ -174,5 +179,10 @@ public class ShopUI : MonoBehaviour
     {
         currentPurchaser.SpendFunds(selectedItem.cost);
         RefreshShopUICommons();
+    }
+
+    public void OnClickedExit()
+    {
+        Debug.Log("Should exit");
     }
 }
