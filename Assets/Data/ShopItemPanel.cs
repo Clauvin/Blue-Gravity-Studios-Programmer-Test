@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopItemPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] TextMeshProUGUI itemName;
+    [SerializeField] TextMeshProUGUI description;
+    [SerializeField] TextMeshProUGUI price;
+
+    ShopItem panelItem;
+
+    public void Bind(ShopItem item)
     {
-        
+        panelItem = item;
+
+        itemName.text = item.name;
+        description.text = item.description;
+        price.text = item.cost.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
