@@ -98,7 +98,7 @@ MonoBehaviour:
   price: {fileID: 8295445823341099176}
   backgroundPanel: {fileID: 8295445822270822232}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
-  selectedColor: {r: 0, g: 1, b: 0.15294118, a: 0}
+  selectedColor: {r: 0, g: 1, b: 0.15294118, a: 0.39607844}
 --- !u!114 &1318897523315972928
 MonoBehaviour:
   m_ObjectHideFlags: 0
