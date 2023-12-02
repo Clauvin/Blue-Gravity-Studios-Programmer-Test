@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
-public class ShopkeeperInteraction : MonoBehaviour
+public interface IInteracter
+{
+    public void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl, string conversationNode);
+}
+
+public class ShopkeeperInteraction : MonoBehaviour, IInteracter
 {
     private const string startingConversationNode = "Start";
 
