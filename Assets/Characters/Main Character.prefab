@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ead82579f68bb4bbe0ee24c119475e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentFunds: 10000
+  currentFunds: 900
 --- !u!95 &3476826197384326430
 Animator:
   serializedVersion: 4
