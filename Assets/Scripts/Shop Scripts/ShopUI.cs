@@ -174,9 +174,10 @@ public class ShopUI : MonoBehaviour
         selectedItem = newlySelectedItem;
         foreach(var kvp in shopItemToUIMap)
         {
+            ShopItem item = kvp.Key;
             ShopItemPanel itemUI = kvp.Value;
 
-            itemUI.SetIsSelected(itemUI == selectedItem);
+            itemUI.SetIsSelected(item == selectedItem);
         }
 
         RefreshShopUICommons();
