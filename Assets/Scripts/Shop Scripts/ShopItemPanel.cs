@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -35,9 +36,15 @@ public class ShopItemPanel : MonoBehaviour
         backgroundPanel.color = selected ? selectedColor : defaultColor;
     }
 
+    public void SetCanAfford(bool canAfford)
+    {
+        price.fontStyle = canAfford ? FontStyles.Normal : FontStyles.Strikethrough;
+    }
+
     public void OnClicked()
     {
         onSelectedFunction.Invoke(panelItem);
     }
+
 
 }
