@@ -22,23 +22,22 @@ public class ShopkeeperInteraction : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         MainCharacterControl mainCharacterControl = GetMainCharacterFromCollider(collider);
-        TryToStartConversationWithPlayerCharacter(mainCharacterControl);
+        TryToStartConversationWithPlayerCharacter(mainCharacterControl, startingConversationNode);
     }
 
     private void OnTriggerStay2D(Collider2D collider)
     {
         MainCharacterControl mainCharacterControl = GetMainCharacterFromCollider(collider);
-        TryToStartConversationWithPlayerCharacter(mainCharacterControl);
+        TryToStartConversationWithPlayerCharacter(mainCharacterControl, startingConversationNode);
     }
 
-    private void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl)
+    public void TryToStartConversationWithPlayerCharacter(MainCharacterControl characterControl, string conversationNode)
     {
         if (characterControl.isTryingToInteract && !characterControl.isInteracting)
         {
             characterControl.OutsiderSetsInteracting(this.gameObject, true);
-            GetComponentInChildren<DialogueRunner>().StartDialogue(startingConversationNode);
+            GetComponentInChildren<DialogueRunner>().StartDialogue(conversationNode);
         }
-        
     }
 
     private MainCharacterControl GetMainCharacterFromCollider(Collider2D collider)
