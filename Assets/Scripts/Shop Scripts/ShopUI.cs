@@ -193,7 +193,7 @@ public class ShopUI : MonoBehaviour
         IInteracter interacter = currentInteracter.GetComponent<IInteracter>();
         MainCharacterControl mainCharControl = GameObject.FindGameObjectWithTag("Main Character").GetComponent<MainCharacterControl>();
 
-
+        CloseShopInterface();
 
         interacter.TryToContinueConversationWithPlayerCharacter(mainCharControl, interacterNodeOnExit);
     }
