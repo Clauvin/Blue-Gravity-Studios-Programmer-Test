@@ -25,6 +25,8 @@ public class ShopItemPanel : MonoBehaviour
         description.text = item.description;
         price.text = item.cost.ToString();
 
+        onSelectedFunction = onSelectedFunctionDoThis;
+
         SetIsSelected(false);
     }
 
