@@ -15,12 +15,13 @@ Shopkeeper: Oh, hi! Fancy day we have here today, right?
 title: Buy
 ---
 Shopkeeper: One Shop UI coming up!
-<<OpenBuyingShopInterface "Shop System">>
+<<OpenBuyingShopInterface "Buying Shop System">>
 ===
 
 title: Sell
 ---
-Shopkeeper: I ALSO should be able to buy things from you, but that capacity still have to be coded.
+Shopkeeper: Another Shop UI coming up!
+<<OpenSellingShopInterface "Selling Shop System">>
 ===
 
 title: Chat
@@ -44,6 +45,25 @@ Shopkeeper: Thanks for checking our wares!
 title: AfterBuy
 ---
 Shopkeeper: Any other way I can be of assistance?
+    -> Buy
+        <<jump Buy>>
+    -> Sell
+        <<jump Sell>>
+    -> Chat
+        <<jump Chat>>
+    -> Bye
+        <<jump Bye>>
+===
+
+title: ThanksSell
+---
+Shopkeeper: Thanks for your products!
+<<jump AfterSell>>
+===
+
+title: AfterSell
+---
+Shopkeeper: Any other interesting thing that you want to sell to me?
     -> Buy
         <<jump Buy>>
     -> Sell
