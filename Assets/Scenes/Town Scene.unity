@@ -33280,7 +33280,7 @@ PrefabInstance:
       objectReference: {fileID: 77453324}
     - target: {fileID: 808184547821894673, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClickedExit
+      value: OnClickedSale
       objectReference: {fileID: 0}
     - target: {fileID: 808184547821894673, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
