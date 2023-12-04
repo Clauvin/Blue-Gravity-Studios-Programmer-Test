@@ -18,9 +18,23 @@ public class ShopItemPanel : MonoBehaviour
 
     ShopItem panelItem;
 
-    public void Bind(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis)
+    public void BindOnBuying(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis)
     {
         panelItem = item;
+
+        itemName.text = item.name;
+        description.text = item.description;
+        price.text = item.cost.ToString();
+
+        onSelectedFunction = onSelectedFunctionDoThis;
+
+        SetIsSelected(false);
+    }
+
+    public void BindOnSelling(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis, float discountOnSelling)
+    {
+        panelItem = item;
+        item.cost = (int)(item.cost * discountOnSelling);
 
         itemName.text = item.name;
         description.text = item.description;
