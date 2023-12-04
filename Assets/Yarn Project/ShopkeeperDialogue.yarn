@@ -15,7 +15,7 @@ Shopkeeper: Oh, hi! Fancy day we have here today, right?
 title: Buy
 ---
 Shopkeeper: One Shop UI coming up!
-<<OpenShopInterface "Shop System">>
+<<OpenBuyingShopInterface "Shop System">>
 ===
 
 title: Sell

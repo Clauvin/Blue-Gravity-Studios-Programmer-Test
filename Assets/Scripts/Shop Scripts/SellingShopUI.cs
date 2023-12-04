@@ -203,13 +203,13 @@ public class SellingShopUI : MonoBehaviour
         interacter.TryToContinueConversationWithPlayerCharacter(mainCharControl, interacterNodeOnExit);
     }
 
-    [YarnCommand("OpenShopInterface")]
+    [YarnCommand("OpenSellingShopInterface")]
     public void OpenShopInterface()
     {
         shopCanvas.SetActive(true);
     }
 
-    [YarnCommand("CloseShopInterface")]
+    [YarnCommand("CloseSellingShopInterface")]
     public void CloseShopInterface()
     {
         shopCanvas.SetActive(false);
