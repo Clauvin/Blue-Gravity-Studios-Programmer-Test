@@ -187,7 +187,11 @@ public class ShopUI : MonoBehaviour
 
     public void OnClickedPurchase()
     {
-        currentPurchaser.SpendFunds(selectedItem.cost);
+        if (currentPurchaser.SpendFunds(selectedItem.cost))
+        {
+            //debt: check if adding the Item to the Inventory adds it or a copy of it.
+            currentPurchaserInventory.ReceiveItem(selectedItem);
+        }
         RefreshShopUICommons();
     }
 
