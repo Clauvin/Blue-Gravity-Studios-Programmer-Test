@@ -2,7 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+//called like this because IInventory would be a horrible name for an interface.
+//Too many potential mistakes with that name
+public interface InventoryInterface
+{
+    void ReceiveItem(ShopItem item);
+
+    bool RemoveItem(ShopItem item);
+}
+
+public class Inventory : MonoBehaviour, InventoryInterface
 {
     List<ShopItem> shopItemsInInventory;
 
