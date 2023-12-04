@@ -9,6 +9,8 @@ public interface InventoryInterface
     void ReceiveItem(ShopItem item);
 
     bool RemoveItem(ShopItem item);
+
+    List<ShopItem> getShopItemList();
 }
 
 public class Inventory : MonoBehaviour, InventoryInterface
@@ -38,7 +40,11 @@ public class Inventory : MonoBehaviour, InventoryInterface
         {
             return false;
         }
+    }
 
+    public List<ShopItem> getShopItemList()
+    {
+        return shopItemsInInventory;
     }
 
     // Start is called before the first frame update
