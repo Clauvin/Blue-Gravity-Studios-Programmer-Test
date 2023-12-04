@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
 
-public class ShopUI : MonoBehaviour
+public class BuyingShopUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI availableFunds;
     [SerializeField] Transform categoryUIRoot;
@@ -164,7 +164,7 @@ public class ShopUI : MonoBehaviour
             GameObject itemGo = Instantiate(itemUIPrefab, itemUIRoot);
             ShopItemPanel itemUI = itemGo.GetComponent<ShopItemPanel>();
 
-            itemUI.Bind(item, OnItemSelected);
+            itemUI.BindOnBuying(item, OnItemSelected);
             shopItemToUIMap[item] = itemUI;
         }
 
