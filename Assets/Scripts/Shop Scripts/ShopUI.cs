@@ -23,6 +23,7 @@ public class ShopUI : MonoBehaviour
     public string interacterNodeOnExit;
 
     IPurchaser currentPurchaser;
+    InventoryInterface currentPurchaserInventory;
 
     ShopItemCategory selectedCategory;
     ShopItem selectedItem;
@@ -35,6 +36,7 @@ public class ShopUI : MonoBehaviour
     void Start()
     {
         currentPurchaser = FindObjectOfType<Purchaser>();
+        currentPurchaserInventory = FindObjectOfType<Inventory>();
 
         RefreshShopUICommons();
         RefreshShopUICategories();
