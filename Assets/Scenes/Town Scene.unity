@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 77453326}
-  - component: {fileID: 77453325}
   - component: {fileID: 77453324}
   m_Layer: 0
   m_Name: Selling Shop System
@@ -157,35 +156,13 @@ MonoBehaviour:
   categoryUIRoot: {fileID: 2101066218}
   itemUIRoot: {fileID: 2101066216}
   PurchaseButton: {fileID: 2101066214}
-  categoryUIPrefab: {fileID: 0}
-  itemUIPrefab: {fileID: 0}
-  availableItems: []
-  priceAdjustmentOnSell: 0.5
-  shopCanvas: {fileID: 861929893158392760, guid: 1ada5b9190050244ebdcde9795ba0f70, type: 3}
-  currentInteracter: {fileID: 8295445822270822238, guid: da90c80e475d1454c9b0fd1769fa14ce, type: 3}
-  interacterNodeOnExit: AfterSell
---- !u!114 &77453325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77453323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad1ccf32216afe441b204c5646c7e322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  availableFunds: {fileID: 2101066220}
-  categoryUIRoot: {fileID: 2101066219}
-  itemUIRoot: {fileID: 2101066217}
-  PurchaseButton: {fileID: 2101066214}
   categoryUIPrefab: {fileID: 861929893158392760, guid: 1ada5b9190050244ebdcde9795ba0f70, type: 3}
   itemUIPrefab: {fileID: 8295445822270822238, guid: da90c80e475d1454c9b0fd1769fa14ce, type: 3}
   availableItems: []
+  priceAdjustmentOnSell: 0.5
   shopCanvas: {fileID: 1044454005}
   currentInteracter: {fileID: 1649117069}
-  interacterNodeOnExit: ThanksBuy
+  interacterNodeOnExit: AfterSell
 --- !u!4 &77453326
 Transform:
   m_ObjectHideFlags: 0
@@ -33225,6 +33202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1044454006}
     m_Modifications:
+    - target: {fileID: 808184546011122769, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
+      propertyPath: m_text
+      value: Sell
+      objectReference: {fileID: 0}
     - target: {fileID: 808184546320194084, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -33268,7 +33249,7 @@ PrefabInstance:
     - target: {fileID: 808184546949216944, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 77453325}
+      objectReference: {fileID: 0}
     - target: {fileID: 808184546949216944, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -33420,19 +33401,9 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 808184547472696021, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
   m_PrefabInstance: {fileID: 2101066213}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2101066217 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 808184547939600703, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
-  m_PrefabInstance: {fileID: 2101066213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2101066218 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 808184546979631492, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
-  m_PrefabInstance: {fileID: 2101066213}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2101066219 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 808184546825140669, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
   m_PrefabInstance: {fileID: 2101066213}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2101066220 stripped
