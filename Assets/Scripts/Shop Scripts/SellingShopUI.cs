@@ -185,9 +185,12 @@ public class SellingShopUI : MonoBehaviour
 
     public void OnClickedSale()
     {
-        currentSeller.RetrieveFunds(selectedItem.cost);
-        currentSellerInventory.RemoveItem(selectedItem);
-        availableItems.Remove(selectedItem);
+        if (selectedItem != null)
+        {
+            currentSeller.RetrieveFunds(selectedItem.cost);
+            currentSellerInventory.RemoveItem(selectedItem);
+            availableItems.Remove(selectedItem);
+        }
 
         RefreshShopUICommons();
         RefreshShopUICategories();
