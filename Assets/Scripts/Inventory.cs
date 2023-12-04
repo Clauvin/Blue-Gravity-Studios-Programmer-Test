@@ -24,7 +24,6 @@ public class Inventory : MonoBehaviour, InventoryInterface
     {
         shopItemsInInventory.Add(item);
         shopItemsInInventory.Sort((left, right) => left.name.CompareTo(right.name));
-        Debug.Log(shopItemsInInventory);
     }
 
     public bool RemoveItem(ShopItem item)
@@ -32,12 +31,14 @@ public class Inventory : MonoBehaviour, InventoryInterface
         if (shopItemsInInventory.Contains(item))
         {
             shopItemsInInventory.Remove(item);
+            shopItemsInInventory.Sort((left, right) => left.name.CompareTo(right.name));
             return true;
         }
         else
         {
             return false;
         }
+
     }
 
     // Start is called before the first frame update
