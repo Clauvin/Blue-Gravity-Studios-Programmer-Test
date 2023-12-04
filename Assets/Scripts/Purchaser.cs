@@ -6,6 +6,7 @@ public interface IPurchaser
 {
     int GetCurrentFunds();
     bool SpendFunds(int amount);
+    bool RetrieveFunds(int amount);
 }
 public class Purchaser : MonoBehaviour, IPurchaser
 {
