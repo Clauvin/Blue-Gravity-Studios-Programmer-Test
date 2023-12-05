@@ -63,6 +63,7 @@ public class Inventory : MonoBehaviour, InventoryInterface
         if (!shopItemsEquipped.Contains(equipment))
         {
             shopItemsEquipped.Add(equipment);
+            Debug.Log("Equipped " + equipment.name);
             return true;
         }
         else return false;
@@ -75,6 +76,7 @@ public class Inventory : MonoBehaviour, InventoryInterface
         if (shopItemsEquipped.Contains(equipment))
         {
             shopItemsEquipped.Remove(equipment);
+            Debug.Log("Unequipped " + equipment.name);
             return true;
         }
         else return false;
