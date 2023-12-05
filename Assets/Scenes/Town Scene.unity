@@ -2470,6 +2470,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1220017100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2995971968360019393, guid: 85e1dd4dd14c3bd41b10fa1e8c1b6f23, type: 3}
+  m_PrefabInstance: {fileID: 3476826195894177086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365941936
 GameObject:
   m_ObjectHideFlags: 0
@@ -34053,6 +34058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3476826197384326433, guid: 85e1dd4dd14c3bd41b10fa1e8c1b6f23, type: 3}
+      propertyPath: equippedSpritesRoot
+      value: 
+      objectReference: {fileID: 1220017100}
     - target: {fileID: 3476826197384326434, guid: 85e1dd4dd14c3bd41b10fa1e8c1b6f23, type: 3}
       propertyPath: m_Name
       value: Main Character
@@ -34114,8 +34123,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 696322835, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -34123,7 +34132,7 @@ SpriteRenderer:
   m_Size: {x: 0.3201021, y: 0.32000002}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &3476826195894177091
@@ -34166,7 +34175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34218,7 +34227,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34257,7 +34266,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Library: []
+  m_Library:
+  - m_Name: No Clothes
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: Entry
+      m_Hash: 0
+      m_Sprite: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 1c05aa01ac810994cbce08a7c4aa313f, type: 3}
 --- !u!1001 &4491738578878006022
 PrefabInstance:
