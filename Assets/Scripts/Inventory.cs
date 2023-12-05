@@ -51,6 +51,11 @@ public class Inventory : MonoBehaviour, InventoryInterface
 
     public bool EquipItem(ShopItem equipment)
     {
+        foreach (ShopItem equip in shopItemsEquipped)
+        {
+            if (equip.category == equipment.category) return false;
+        }
+
         if (!shopItemsEquipped.Contains(equipment))
         {
             shopItemsEquipped.Add(equipment);
