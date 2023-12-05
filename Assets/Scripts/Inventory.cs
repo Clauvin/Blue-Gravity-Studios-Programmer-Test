@@ -51,6 +51,8 @@ public class Inventory : MonoBehaviour, InventoryInterface
 
     public bool EquipItem(ShopItem equipment)
     {
+        if (equipment == null) return false;
+
         foreach (ShopItem equip in shopItemsEquipped)
         {
             if (equip.category == equipment.category) return false;
@@ -66,6 +68,8 @@ public class Inventory : MonoBehaviour, InventoryInterface
 
     public bool UnequipItem(ShopItem equipment)
     {
+        if (equipment == null) return false;
+
         if (shopItemsEquipped.Contains(equipment))
         {
             shopItemsEquipped.Remove(equipment);
