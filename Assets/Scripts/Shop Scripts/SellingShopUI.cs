@@ -187,7 +187,7 @@ public class SellingShopUI : MonoBehaviour
     {
         if (selectedItem != null)
         {
-            currentSeller.RetrieveFunds(selectedItem.cost);
+            currentSeller.RetrieveFunds(selectedItem.GetResaleVariableCost());
             currentSellerInventory.RemoveItem(selectedItem);
             availableItems.Remove(selectedItem);
         }
@@ -210,6 +210,7 @@ public class SellingShopUI : MonoBehaviour
     public void OpenShopInterface()
     {
         shopCanvas.SetActive(true);
+        Start();
     }
 
     [YarnCommand("CloseSellingShopInterface")]
