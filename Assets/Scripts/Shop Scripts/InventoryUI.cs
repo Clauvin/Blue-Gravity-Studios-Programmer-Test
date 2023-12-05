@@ -199,23 +199,22 @@ public class InventoryUI : MonoBehaviour
 
     public void OnClickedExit()
     {
-        IInteracter interacter = currentInteracter.GetComponent<IInteracter>();
         MainCharacterControl mainCharControl = GameObject.FindGameObjectWithTag("Main Character").GetComponent<MainCharacterControl>();
 
-        CloseShopInterface();
+        CloseInventoryInterface();
 
-        interacter.TryToContinueConversationWithPlayerCharacter(mainCharControl, interacterNodeOnExit);
+        mainCharControl.TryToEndConversationWithPlayerCharacter();
     }
 
-    [YarnCommand("OpenSellingShopInterface")]
-    public void OpenShopInterface()
+    [YarnCommand("OpenInventoryInterface")]
+    public void OpenInventoryInterface()
     {
         inventoryCanvas.SetActive(true);
         Start();
     }
 
-    [YarnCommand("CloseSellingShopInterface")]
-    public void CloseShopInterface()
+    [YarnCommand("CloseInventoryInterface")]
+    public void CloseInventoryInterface()
     {
         inventoryCanvas.SetActive(false);
     }
