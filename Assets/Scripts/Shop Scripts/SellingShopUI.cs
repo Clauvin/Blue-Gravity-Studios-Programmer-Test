@@ -53,6 +53,15 @@ public class SellingShopUI : MonoBehaviour
 
     void LoadItemsToSell()
     {
+        for (int childIndex = itemUIRoot.childCount - 1; childIndex >= 0; childIndex--)
+        {
+            GameObject childGO = itemUIRoot.GetChild(childIndex).gameObject;
+
+            Destroy(childGO);
+        }
+
+        availableItems = new List<ShopItem>();
+
         List<ShopItem> sellerInventory = currentSellerInventory.getShopItemList();
 
         foreach (ShopItem item in sellerInventory)
