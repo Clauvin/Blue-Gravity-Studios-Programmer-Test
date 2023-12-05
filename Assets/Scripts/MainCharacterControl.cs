@@ -9,6 +9,7 @@ public class MainCharacterControl : MonoBehaviour
     public InputActionAsset actions;
 
     private InputAction moveAction;
+    private InputAction accessInventoryAction;
     private InputAction interactAction;
 
     private Animator animator;
@@ -16,6 +17,8 @@ public class MainCharacterControl : MonoBehaviour
     private Rigidbody2D rigidbody2D;
 
     private GameObject eventCollider2DObject;
+
+    private GameObject inventoryPanel;
 
     [Range(0, 10)]
     private float constantSpeedPerSecond = 3.0f;
@@ -26,6 +29,7 @@ public class MainCharacterControl : MonoBehaviour
     #region MainCharacterConsts
     private const string nameOfActionMap = "Main Character Actions";
     private const string nameOfMovementAction = "movement";
+    private const string nameOfAccessInventoryAction = "accessInventory";
     private const string nameOfInteractAction = "interact";
     #endregion
 
@@ -41,6 +45,7 @@ public class MainCharacterControl : MonoBehaviour
     {
         InputActionMap mainCharacterActionsMap = actions.FindActionMap(nameOfActionMap);
         moveAction = mainCharacterActionsMap.FindAction(nameOfMovementAction);
+        accessInventoryAction = mainCharacterActionsMap.FindAction(nameOfAccessInventoryAction);
         interactAction = mainCharacterActionsMap.FindAction(nameOfInteractAction);
 
         animator = GetComponent<Animator>();
@@ -52,6 +57,8 @@ public class MainCharacterControl : MonoBehaviour
         //debt: there are only two GameObjects BY NOW on the main Character. We need to be more specific in terms of how to find the
         //  EventCollider BoxCollider2D.
         eventCollider2DObject = boxCollidersFoundOnTheMainCharacter[boxCollidersFoundOnTheMainCharacter.Length - 1].gameObject;
+
+        inventoryPanel = GameObject.Find("Inventory System");
     }
 
     void Start()
@@ -62,6 +69,7 @@ public class MainCharacterControl : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
+        float tryingToAccessInventory = accessInventoryAction.ReadValue<float>();
         float tryingToInteract = interactAction.ReadValue<float>();
 
         if (tryingToInteract > 0.0f) { isTryingToInteract = true; } else { isTryingToInteract = false; }
@@ -70,6 +78,7 @@ public class MainCharacterControl : MonoBehaviour
         {
             MoveCharacter(moveVector);
             MoveEventColliderBox(moveVector);
+            AccessInventory(tryingToAccessInventory);
         }
 
         UpdateAnimation(moveVector);
@@ -100,6 +109,14 @@ public class MainCharacterControl : MonoBehaviour
             else if (moveVector.y > 0) { yOffset = defaultOffsetValue; }
 
             eventCollider2DObject.GetComponent<BoxCollider2D>().offset = new Vector2(xOffset, yOffset);
+        }
+    }
+
+    private void AccessInventory(float tryingToAccessInventory)
+    {
+        if (tryingToAccessInventory > 0.0f) {
+            inventoryPanel.GetComponent<InventoryUI>().OpenInventoryInterface();
+            OutsiderSetsInteracting(this.gameObject, true);
         }
     }
 
