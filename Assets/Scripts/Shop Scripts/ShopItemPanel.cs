@@ -12,6 +12,7 @@ public class ShopItemPanel : MonoBehaviour
     [SerializeField] TextMeshProUGUI description;
     [SerializeField] TextMeshProUGUI price;
     [SerializeField] Image backgroundPanel;
+    [SerializeField] Image iconImage;
     [SerializeField] Color defaultColor;
     [SerializeField] Color selectedColor;
     UnityAction<ShopItem> onSelectedFunction;
@@ -35,6 +36,7 @@ public class ShopItemPanel : MonoBehaviour
         itemName.text = item.name;
         description.text = item.description;
         price.text = item.cost.ToString();
+        iconImage.sprite = item.icon;
 
         onSelectedFunction = onSelectedFunctionDoThis;
 
@@ -49,6 +51,7 @@ public class ShopItemPanel : MonoBehaviour
         itemName.text = item.name;
         description.text = item.description;
         price.text = item.GetResaleVariableCost().ToString();
+        iconImage.sprite = item.icon;
 
         onSelectedFunction = onSelectedFunctionDoThis;
 
