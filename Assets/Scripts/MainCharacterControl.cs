@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.U2D.Animation;
 using Yarn.Unity;
 
 public class MainCharacterControl : MonoBehaviour
@@ -13,6 +14,10 @@ public class MainCharacterControl : MonoBehaviour
     private InputAction interactAction;
 
     private Animator animator;
+    public GameObject equippedSpritesRoot;
+    public SpriteRenderer hatRenderer;
+    public SpriteRenderer wigRenderer;
+    public SpriteRenderer clothesRenderer;
 
     private Rigidbody2D rigidbody2D;
 
@@ -131,6 +136,24 @@ public class MainCharacterControl : MonoBehaviour
         else
         {
             animator.SetBool("IsWalking", false);
+        }
+
+        if (GetComponent<Inventory>().GetAmountOfEquippedItems() != 0)
+        {
+            string currentBodySpriteName = GetComponent<SpriteRenderer>().sprite.name;
+            string spriteSuffix = currentBodySpriteName.Replace("char1_walk", "");
+            List<ShopItem> equippedItems = GetComponent<Inventory>().GetEquippedItems();
+
+            foreach (ShopItem item in equippedItems)
+            {
+                string category = item.category.Name;
+                SpriteResolver equipmentSpriteResolver = equippedSpritesRoot.transform.Find(category).gameObject.GetComponent<SpriteResolver>();
+
+                string equipmentSpritePrefix = item.name;
+                string equipmentSpriteName = equipmentSpritePrefix + spriteSuffix;
+                equipmentSpriteResolver.SetCategoryAndLabel(equipmentSpritePrefix, equipmentSpriteName);
+            }
+
         }
     }
 
