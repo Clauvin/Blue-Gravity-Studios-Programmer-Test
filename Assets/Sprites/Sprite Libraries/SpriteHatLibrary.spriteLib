@@ -1,0 +1,525 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 36
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: No Clothes
+    m_Hash: 2080186664
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Entry
+      m_Hash: -354373004
+      m_Sprite: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Lucky Hat
+    m_Hash: -477770605
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Lucky Hat_downwards_0
+      m_Hash: -2023656849
+      m_Sprite: {fileID: -1245410779, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1245410779, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_1
+      m_Hash: -261733639
+      m_Sprite: {fileID: 1511830936, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1511830936, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_2
+      m_Hash: 1768887107
+      m_Sprite: {fileID: 16043819, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 16043819, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_3
+      m_Hash: 510141397
+      m_Sprite: {fileID: 929847172, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 929847172, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_4
+      m_Hash: -2146650506
+      m_Sprite: {fileID: 1602310790, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1602310790, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_5
+      m_Hash: -150239520
+      m_Sprite: {fileID: -1951876718, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1951876718, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_6
+      m_Hash: 1845679962
+      m_Sprite: {fileID: -1780757904, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1780757904, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_downwards_7
+      m_Hash: 419817420
+      m_Sprite: {fileID: 577302713, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 577302713, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_0
+      m_Hash: 2084599858
+      m_Sprite: {fileID: -1945965927, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1945965927, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_1
+      m_Hash: 189221028
+      m_Sprite: {fileID: 1308554409, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1308554409, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_2
+      m_Hash: -1840375522
+      m_Sprite: {fileID: -422501782, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -422501782, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_3
+      m_Hash: -448190072
+      m_Sprite: {fileID: -1077091103, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1077091103, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_4
+      m_Hash: 2066594859
+      m_Sprite: {fileID: 589372619, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 589372619, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_5
+      m_Hash: 204115133
+      m_Sprite: {fileID: 136902517, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 136902517, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_6
+      m_Hash: -1792811769
+      m_Sprite: {fileID: 66553602, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 66553602, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_leftwards_7
+      m_Hash: -500896367
+      m_Sprite: {fileID: -1503867005, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1503867005, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_0
+      m_Hash: -1997888659
+      m_Sprite: {fileID: -386938819, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -386938819, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_1
+      m_Hash: -17984517
+      m_Sprite: {fileID: -104761641, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -104761641, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_2
+      m_Hash: 1726267969
+      m_Sprite: {fileID: 1131557892, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1131557892, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_3
+      m_Hash: 300151511
+      m_Sprite: {fileID: 779352191, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 779352191, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_4
+      m_Hash: -1886951564
+      m_Sprite: {fileID: 418499672, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 418499672, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_5
+      m_Hash: -125806622
+      m_Sprite: {fileID: -499652423, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -499652423, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_6
+      m_Hash: 1636370008
+      m_Sprite: {fileID: -1706879809, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1706879809, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_rightwards_7
+      m_Hash: 378418894
+      m_Sprite: {fileID: 1354624680, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1354624680, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_0
+      m_Hash: 1886458020
+      m_Sprite: {fileID: 127106380, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 127106380, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_1
+      m_Hash: 125182002
+      m_Sprite: {fileID: 369285866, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 369285866, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_2
+      m_Hash: -1635815032
+      m_Sprite: {fileID: 133769239, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 133769239, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_3
+      m_Hash: -377994978
+      m_Sprite: {fileID: -808902841, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -808902841, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_4
+      m_Hash: 1998378173
+      m_Sprite: {fileID: -175356162, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -175356162, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_5
+      m_Hash: 1827883
+      m_Sprite: {fileID: 1382432895, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1382432895, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_6
+      m_Hash: -1726827119
+      m_Sprite: {fileID: -2089266738, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2089266738, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    - m_Name: Lucky Hat_upwards_7
+      m_Hash: -300579577
+      m_Sprite: {fileID: 2145212932, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2145212932, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 32
+  - m_Name: Pumpkin Hat
+    m_Hash: 2002306643
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Pumpkin Hat_downwards_0
+      m_Hash: 150791472
+      m_Sprite: {fileID: -1517305771, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1517305771, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_1
+      m_Hash: 2147210662
+      m_Sprite: {fileID: 441399305, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 441399305, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_2
+      m_Hash: -420314084
+      m_Sprite: {fileID: 1679785934, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1679785934, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_3
+      m_Hash: -1846168438
+      m_Sprite: {fileID: 199712285, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 199712285, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_4
+      m_Hash: 261169449
+      m_Sprite: {fileID: 181082542, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 181082542, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_5
+      m_Hash: 2023100863
+      m_Sprite: {fileID: 966150359, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 966150359, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_6
+      m_Hash: -509657083
+      m_Sprite: {fileID: 616013946, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 616013946, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_downwards_7
+      m_Hash: -1768394605
+      m_Sprite: {fileID: -1920645748, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1920645748, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_0
+      m_Hash: -203559059
+      m_Sprite: {fileID: 809945971, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 809945971, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_1
+      m_Hash: -2066030597
+      m_Sprite: {fileID: 798266416, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 798266416, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_2
+      m_Hash: 500403777
+      m_Sprite: {fileID: 22704484, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 22704484, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_3
+      m_Hash: 1792327383
+      m_Sprite: {fileID: 1218412991, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1218412991, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_4
+      m_Hash: -189781132
+      m_Sprite: {fileID: -1155573849, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1155573849, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_5
+      m_Hash: -2085151774
+      m_Sprite: {fileID: -145655661, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -145655661, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_6
+      m_Hash: 448678488
+      m_Sprite: {fileID: 351646402, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 351646402, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_leftwards_7
+      m_Hash: 1840872142
+      m_Sprite: {fileID: -1821099505, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1821099505, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_0
+      m_Hash: 1941009055
+      m_Sprite: {fileID: -557995035, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -557995035, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_1
+      m_Hash: 79053321
+      m_Sprite: {fileID: 1285032543, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1285032543, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_2
+      m_Hash: -1648421965
+      m_Sprite: {fileID: -1901314743, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1901314743, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_3
+      m_Hash: -357031131
+      m_Sprite: {fileID: -719732199, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -719732199, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_4
+      m_Hash: 1960621702
+      m_Sprite: {fileID: -1084249803, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1084249803, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_5
+      m_Hash: 64718352
+      m_Sprite: {fileID: -1393188161, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1393188161, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_6
+      m_Hash: -1697458262
+      m_Sprite: {fileID: -1182962873, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1182962873, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_rightwards_7
+      m_Hash: -304748740
+      m_Sprite: {fileID: -225154037, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -225154037, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_0
+      m_Hash: 461350265
+      m_Sprite: {fileID: 914313508, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 914313508, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_1
+      m_Hash: 1819842031
+      m_Sprite: {fileID: -1333980876, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1333980876, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_2
+      m_Hash: -177093547
+      m_Sprite: {fileID: -975573909, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -975573909, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_3
+      m_Hash: -2106133309
+      m_Sprite: {fileID: 35671234, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 35671234, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_4
+      m_Hash: 470966624
+      m_Sprite: {fileID: 1319833987, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1319833987, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_5
+      m_Hash: 1796559350
+      m_Sprite: {fileID: 1822197967, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1822197967, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_6
+      m_Hash: -233045940
+      m_Sprite: {fileID: 1212716832, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1212716832, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    - m_Name: Pumpkin Hat_upwards_7
+      m_Hash: -2061815590
+      m_Sprite: {fileID: 841896722, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 841896722, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 32
+  - m_Name: Purple Pumpkin Hat
+    m_Hash: -1934666222
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Purple Pumpkin Hat_downwards_0
+      m_Hash: -1675745956
+      m_Sprite: {fileID: -1012908711, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1012908711, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_1
+      m_Hash: -350677558
+      m_Sprite: {fileID: 512892947, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 512892947, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_2
+      m_Hash: 1913668720
+      m_Sprite: {fileID: 140395047, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 140395047, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_3
+      m_Hash: 85423334
+      m_Sprite: {fileID: -968311642, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -968311642, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_4
+      m_Hash: -1686904507
+      m_Sprite: {fileID: 1063284968, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1063284968, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_5
+      m_Hash: -327888429
+      m_Sprite: {fileID: -1786889536, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1786889536, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_6
+      m_Hash: 1971159145
+      m_Sprite: {fileID: -426261680, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -426261680, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_downwards_7
+      m_Hash: 41595135
+      m_Sprite: {fileID: -1615460246, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1615460246, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_0
+      m_Hash: 1732194049
+      m_Sprite: {fileID: 1895915869, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1895915869, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_1
+      m_Hash: 272113559
+      m_Sprite: {fileID: 1126399825, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1126399825, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_2
+      m_Hash: -1993257427
+      m_Sprite: {fileID: -2131702435, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2131702435, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_3
+      m_Hash: -29983045
+      m_Sprite: {fileID: -1220980806, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1220980806, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_4
+      m_Hash: 1616046872
+      m_Sprite: {fileID: 1838816996, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1838816996, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_5
+      m_Hash: 391502734
+      m_Sprite: {fileID: -1661477533, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1661477533, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_6
+      m_Hash: -1906537932
+      m_Sprite: {fileID: -1682437326, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1682437326, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_leftwards_7
+      m_Hash: -111428958
+      m_Sprite: {fileID: 1412168560, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1412168560, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_0
+      m_Hash: 924957996
+      m_Sprite: {fileID: 676256369, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 676256369, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_1
+      m_Hash: 1076268474
+      m_Sprite: {fileID: 15651571, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 15651571, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_2
+      m_Hash: -651174912
+      m_Sprite: {fileID: 1148118864, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1148118864, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_3
+      m_Hash: -1373049706
+      m_Sprite: {fileID: -1923860195, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1923860195, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_4
+      m_Hash: 810318133
+      m_Sprite: {fileID: -568348944, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -568348944, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_5
+      m_Hash: 1196116387
+      m_Sprite: {fileID: -1678349785, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1678349785, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_6
+      m_Hash: -566093799
+      m_Sprite: {fileID: -1982662871, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1982662871, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_rightwards_7
+      m_Hash: -1455085425
+      m_Sprite: {fileID: -268825919, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -268825919, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_0
+      m_Hash: 860223657
+      m_Sprite: {fileID: 1006055865, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1006055865, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_1
+      m_Hash: 1145227327
+      m_Sprite: {fileID: 71317, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 71317, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_2
+      m_Hash: -582248059
+      m_Sprite: {fileID: -1744131891, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1744131891, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_3
+      m_Hash: -1437816557
+      m_Sprite: {fileID: 1098739424, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1098739424, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_4
+      m_Hash: 875052208
+      m_Sprite: {fileID: -745890639, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -745890639, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_5
+      m_Hash: 1127156774
+      m_Sprite: {fileID: 681912889, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 681912889, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_6
+      m_Hash: -635019876
+      m_Sprite: {fileID: 1799113725, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1799113725, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    - m_Name: Purple Pumpkin Hat_upwards_7
+      m_Hash: -1390318326
+      m_Sprite: {fileID: 1573080645, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1573080645, guid: b719cfde5b10cee48b47f586b9680140, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 32
+  m_PrimaryLibraryGUID: 
