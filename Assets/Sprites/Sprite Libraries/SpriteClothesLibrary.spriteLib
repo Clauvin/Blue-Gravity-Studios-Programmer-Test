@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 36
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Basic Clothes
+    m_Hash: -716123116
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Basic Clothes_downwards_0
+      m_Hash: 1662528731
+      m_Sprite: {fileID: 696322835, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 696322835, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_1
+      m_Hash: 337583181
+      m_Sprite: {fileID: 591371174, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 591371174, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_2
+      m_Hash: -1927918089
+      m_Sprite: {fileID: -1642844143, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1642844143, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_3
+      m_Hash: -99517087
+      m_Sprite: {fileID: -463459933, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -463459933, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_4
+      m_Hash: 1685448898
+      m_Sprite: {fileID: 23123662, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 23123662, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_5
+      m_Hash: 326293588
+      m_Sprite: {fileID: 274272236, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 274272236, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_6
+      m_Hash: -1971615250
+      m_Sprite: {fileID: -309763994, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -309763994, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_downwards_7
+      m_Hash: -42157704
+      m_Sprite: {fileID: -584404369, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -584404369, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_0
+      m_Hash: -1741085050
+      m_Sprite: {fileID: 1068120357, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1068120357, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_1
+      m_Hash: -281143792
+      m_Sprite: {fileID: -1177213102, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1177213102, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_2
+      m_Hash: 1983334314
+      m_Sprite: {fileID: 232887898, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 232887898, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_3
+      m_Hash: 19953468
+      m_Sprite: {fileID: 1097399810, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1097399810, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_4
+      m_Hash: -1621826913
+      m_Sprite: {fileID: -1329351207, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1329351207, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_5
+      m_Hash: -397159927
+      m_Sprite: {fileID: 1377007006, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1377007006, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_6
+      m_Hash: 1901757363
+      m_Sprite: {fileID: 1707047475, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1707047475, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_leftwards_7
+      m_Hash: 106804005
+      m_Sprite: {fileID: -2117748550, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2117748550, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_0
+      m_Hash: 1141026214
+      m_Sprite: {fileID: 2101028560, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2101028560, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_1
+      m_Hash: 856005936
+      m_Sprite: {fileID: -1376330267, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1376330267, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_2
+      m_Hash: -1442001782
+      m_Sprite: {fileID: 682700137, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 682700137, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_3
+      m_Hash: -586417124
+      m_Sprite: {fileID: -2063881976, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2063881976, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_4
+      m_Hash: 1131375039
+      m_Sprite: {fileID: -486856264, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -486856264, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_5
+      m_Hash: 879253801
+      m_Sprite: {fileID: 184498591, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 184498591, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_6
+      m_Hash: -1386149741
+      m_Sprite: {fileID: 10936694, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 10936694, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_rightwards_7
+      m_Hash: -630835195
+      m_Sprite: {fileID: 1818031461, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1818031461, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_0
+      m_Hash: -419558747
+      m_Sprite: {fileID: -190899534, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -190899534, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_1
+      m_Hash: -1845937613
+      m_Sprite: {fileID: -2017228376, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2017228376, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_2
+      m_Hash: 149973897
+      m_Sprite: {fileID: 1571618392, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1571618392, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_3
+      m_Hash: 2146917151
+      m_Sprite: {fileID: 1515430505, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1515430505, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_4
+      m_Hash: -510406980
+      m_Sprite: {fileID: 1020655489, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1020655489, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_5
+      m_Hash: -1768620502
+      m_Sprite: {fileID: 757230703, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 757230703, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_6
+      m_Hash: 261992336
+      m_Sprite: {fileID: 1485755414, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1485755414, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    - m_Name: Basic Clothes_upwards_7
+      m_Hash: 2023399174
+      m_Sprite: {fileID: 994549280, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 994549280, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 32
+  m_PrimaryLibraryGUID: 
