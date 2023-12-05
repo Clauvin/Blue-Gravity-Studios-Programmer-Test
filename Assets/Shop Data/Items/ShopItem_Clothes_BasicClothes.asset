@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Basic Clothes
   description: Those are... clothes. Function over form still leaves function right?
   cost: 70
+  icon: {fileID: 696322835, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}

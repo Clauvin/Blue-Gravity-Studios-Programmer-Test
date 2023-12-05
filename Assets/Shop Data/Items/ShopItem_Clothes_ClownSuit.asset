@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Clown Suit
   description: To make people laugh!
   cost: 250
+  icon: {fileID: 2056780174, guid: 5db6d4370732a8c4c880c47328d44e8c, type: 3}

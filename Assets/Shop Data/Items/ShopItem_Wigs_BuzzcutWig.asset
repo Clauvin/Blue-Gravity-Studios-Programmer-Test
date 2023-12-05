@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Buzzcut Wig
   description: 
   cost: 50
+  icon: {fileID: -1300567494, guid: d37fbe46093524940a9648816a9be2d1, type: 3}

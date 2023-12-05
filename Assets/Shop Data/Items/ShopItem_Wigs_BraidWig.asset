@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Braid Wig
   description: 
   cost: 50
+  icon: {fileID: -291541217, guid: 31e13baa8b89b2b4fb44ae4a6286f896, type: 3}

@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Purple Pumpkin Hat
   description: Trick or treat in purple syle.
   cost: 135
+  icon: {fileID: -1012908711, guid: b719cfde5b10cee48b47f586b9680140, type: 3}

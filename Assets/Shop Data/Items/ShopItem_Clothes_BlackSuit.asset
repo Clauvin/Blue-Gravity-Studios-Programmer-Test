@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Suit
   description: Looking sharp.
   cost: 500
+  icon: {fileID: 721326001, guid: 9c9674c93accc6447aeb776518af73fa, type: 3}

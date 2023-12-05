@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Emo Wig
   description: 
   cost: 50
+  icon: {fileID: -1963732916, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}

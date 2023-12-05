@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Pumpkin Hat
   description: Trick or treat!
   cost: 130
+  icon: {fileID: -1517305771, guid: ca9fe4cd813d08346a45fa20f0f946d6, type: 3}

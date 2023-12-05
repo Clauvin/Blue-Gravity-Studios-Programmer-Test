@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Lucky Hat
   description: Did a leprechaun lose it?
   cost: 125
+  icon: {fileID: -1245410779, guid: 170f2378bd48b314292f410b52a44b6e, type: 3}
