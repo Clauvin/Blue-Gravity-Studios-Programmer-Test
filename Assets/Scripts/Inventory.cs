@@ -12,7 +12,7 @@ public interface InventoryInterface
 
     List<ShopItem> getShopItemList();
 
-    bool isEquipped(ShopItem equipment);
+    bool IsEquipped(ShopItem equipment);
 }
 
 public class Inventory : MonoBehaviour, InventoryInterface
