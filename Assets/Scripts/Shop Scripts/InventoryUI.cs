@@ -20,7 +20,6 @@ public class InventoryUI : MonoBehaviour
     public GameObject inventoryCanvas;
 
     public GameObject currentInteracter;
-    public string interacterNodeOnExit;
 
     IPurchaser currentOwner;
     InventoryInterface currentOwnerInventory;
