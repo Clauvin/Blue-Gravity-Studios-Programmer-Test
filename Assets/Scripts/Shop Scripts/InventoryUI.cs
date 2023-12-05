@@ -89,7 +89,20 @@ public class InventoryUI : MonoBehaviour
 
                 if (currentInteracter.GetComponent<Inventory>().IsEquipped(item))
                 {
-                    itemUI.name = item.name + " - Equipped";
+                    for (int childIndex = itemUIRoot.childCount - 1; childIndex >= 0; childIndex--)
+                    {
+                        GameObject childGO = itemUIRoot.GetChild(childIndex).gameObject;
+                        ShopItemPanel instantiatedShopItemPanel = childGO.GetComponent<ShopItemPanel>();
+                        if (instantiatedShopItemPanel.GetShopItem() == item)
+                        {
+                            instantiatedShopItemPanel.name = item.name + " - Equipped";
+                        }
+                        else
+                        {
+                            instantiatedShopItemPanel.name = item.name;
+                        }
+                    }
+
                 }
             }
         }
@@ -186,6 +199,15 @@ public class InventoryUI : MonoBehaviour
             ShopItemPanel itemUI = kvp.Value;
 
             itemUI.SetIsSelected(item == selectedItem);
+
+            if (currentInteracter.GetComponent<Inventory>().IsEquipped(item))
+            {
+                equipUnequipButton.GetComponentInChildren<TMP_Text>().text = "Unequip";
+            }
+            else
+            {
+                equipUnequipButton.GetComponentInChildren<TMP_Text>().text = "Equip";
+            }
         }
 
         RefreshInventoryUICommons();
@@ -205,6 +227,7 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
+        OnItemSelected(selectedItem);
         RefreshInventoryUICommons();
         RefreshInventoryUICategories();
     }
