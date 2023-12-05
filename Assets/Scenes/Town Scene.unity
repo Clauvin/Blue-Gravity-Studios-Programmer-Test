@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableFunds: {fileID: 2101066220}
-  categoryUIRoot: {fileID: 2101066218}
-  itemUIRoot: {fileID: 2101066216}
+  categoryUIRoot: {fileID: 2101066219}
+  itemUIRoot: {fileID: 2101066217}
   PurchaseButton: {fileID: 2101066214}
   categoryUIPrefab: {fileID: 861929893158392760, guid: 1ada5b9190050244ebdcde9795ba0f70, type: 3}
   itemUIPrefab: {fileID: 8295445822270822238, guid: da90c80e475d1454c9b0fd1769fa14ce, type: 3}
@@ -33396,14 +33396,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8863616389546076725, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
   m_PrefabInstance: {fileID: 2101066213}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2101066216 stripped
+--- !u!224 &2101066217 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 808184547472696021, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 808184547939600703, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
   m_PrefabInstance: {fileID: 2101066213}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2101066218 stripped
+--- !u!224 &2101066219 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 808184546979631492, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 808184546825140669, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
   m_PrefabInstance: {fileID: 2101066213}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2101066220 stripped
