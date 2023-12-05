@@ -95,11 +95,12 @@ public class InventoryUI : MonoBehaviour
                         ShopItemPanel instantiatedShopItemPanel = childGO.GetComponent<ShopItemPanel>();
                         if (instantiatedShopItemPanel.GetShopItem() == item)
                         {
-                            instantiatedShopItemPanel.name = item.name + " - Equipped";
+                            //debt: we should not count that component 0 is always the name
+                            instantiatedShopItemPanel.GetComponentsInChildren<TMP_Text>()[0].text = item.name + " - Equipped";
                         }
                         else
                         {
-                            instantiatedShopItemPanel.name = item.name;
+                            instantiatedShopItemPanel.GetComponentsInChildren<TMP_Text>()[0].text = item.name;
                         }
                     }
 
