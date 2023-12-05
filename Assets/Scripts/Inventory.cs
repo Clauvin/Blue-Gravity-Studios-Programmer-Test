@@ -16,10 +16,12 @@ public interface InventoryInterface
 public class Inventory : MonoBehaviour, InventoryInterface
 {
     List<ShopItem> shopItemsInInventory;
+    List<ShopItem> shopItemsEquipped;
 
     void Awake()
     {
         shopItemsInInventory = new List<ShopItem>();
+        shopItemsEquipped = new List<ShopItem>();
     }
 
     public void ReceiveItem(ShopItem item)
@@ -45,6 +47,31 @@ public class Inventory : MonoBehaviour, InventoryInterface
     public List<ShopItem> getShopItemList()
     {
         return shopItemsInInventory;
+    }
+
+    public bool EquipItem(ShopItem equipment)
+    {
+        if (!shopItemsEquipped.Contains(equipment))
+        {
+            shopItemsEquipped.Add(equipment);
+            return true;
+        }
+        else return false;
+    }
+
+    public bool UnequipItem(ShopItem equipment)
+    {
+        if (shopItemsEquipped.Contains(equipment))
+        {
+            shopItemsEquipped.Remove(equipment);
+            return true;
+        }
+        else return false;
+    }
+
+    public bool IsEquipped(ShopItem equipment)
+    {
+        return shopItemsEquipped.Contains(equipment);
     }
 
     // Start is called before the first frame update
