@@ -10,6 +10,8 @@ public class ShopItem : ScriptableObject
     [TextArea(3, 5)] public string description;
 
     public int cost;
+    public Sprite icon;
+
     //debt: works, but honestly we don't need this variable to have a resale cost, the SellingShopUI can take care of it as long as it does not
     //  changes the cost variable value
     private int resaleVariableCost;
