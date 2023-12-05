@@ -193,13 +193,16 @@ public class InventoryUI : MonoBehaviour
 
     public void OnClickedToEquip()
     {
-        if (currentInteracter.GetComponent<Inventory>().IsEquipped(selectedItem))
+        if (selectedItem != null)
         {
-            currentInteracter.GetComponent<Inventory>().UnequipItem(selectedItem);
-        }
-        else
-        {
-            currentInteracter.GetComponent<Inventory>().EquipItem(selectedItem);
+            if (currentInteracter.GetComponent<Inventory>().IsEquipped(selectedItem))
+            {
+                currentInteracter.GetComponent<Inventory>().UnequipItem(selectedItem);
+            }
+            else
+            {
+                currentInteracter.GetComponent<Inventory>().EquipItem(selectedItem);
+            }
         }
 
         RefreshInventoryUICommons();
