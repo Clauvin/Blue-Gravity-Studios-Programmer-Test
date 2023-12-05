@@ -2222,7 +2222,6 @@ MonoBehaviour:
   availableItems: []
   inventoryCanvas: {fileID: 326290538}
   currentInteracter: {fileID: 1838748533}
-  interacterNodeOnExit: 
 --- !u!1001 &1189939327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2327,14 +2326,14 @@ PrefabInstance:
     - target: {fileID: 808184547821894673, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1094364538}
     - target: {fileID: 808184547821894673, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClickedSale
+      value: OnClickedToEquip
       objectReference: {fileID: 0}
     - target: {fileID: 808184547821894673, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SellingShopUI, Assembly-CSharp
+      value: InventoryUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 808184547821895151, guid: 76f9e224f394a9c40b7e39c62685016b, type: 3}
       propertyPath: m_Name
