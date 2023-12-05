@@ -12,7 +12,13 @@ public interface InventoryInterface
 
     List<ShopItem> getShopItemList();
 
+    int GetAmountOfEquippedItems();
+
     bool IsEquipped(ShopItem equipment);
+
+    List<ShopItem> GetEquippedItems();
+
+    List<ShopItemCategory> GetEquippedCategories();
 }
 
 public class Inventory : MonoBehaviour, InventoryInterface
@@ -51,6 +57,11 @@ public class Inventory : MonoBehaviour, InventoryInterface
         return shopItemsInInventory;
     }
 
+    public int GetAmountOfEquippedItems()
+    {
+        return shopItemsEquipped.Count;
+    }
+
     public bool EquipItem(ShopItem equipment)
     {
         if (equipment == null) return false;
@@ -85,6 +96,23 @@ public class Inventory : MonoBehaviour, InventoryInterface
     public bool IsEquipped(ShopItem equipment)
     {
         return shopItemsEquipped.Contains(equipment);
+    }
+
+    public List<ShopItem> GetEquippedItems()
+    {
+        return shopItemsEquipped;
+    }
+
+    public List<ShopItemCategory> GetEquippedCategories()
+    {
+        List<ShopItemCategory> equippedCategories = new List<ShopItemCategory>();
+
+        foreach (ShopItem item in shopItemsEquipped)
+        {
+            equippedCategories.Add(item.category);
+        }
+
+        return equippedCategories;
     }
 
     // Start is called before the first frame update
