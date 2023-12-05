@@ -23,6 +23,11 @@ public class ShopItemPanel : MonoBehaviour
         return panelItem;
     }
 
+    public void BindOnInventory(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis)
+    {
+        BindOnBuying(item, onSelectedFunctionDoThis);
+    }
+
     public void BindOnBuying(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis)
     {
         panelItem = item;
