@@ -87,7 +87,10 @@ public class InventoryUI : MonoBehaviour
                 ShopItem item = kvp.Key;
                 ShopItemPanel itemUI = kvp.Value;
 
-                itemUI.SetCanAfford(true);
+                if (currentInteracter.GetComponent<Inventory>().IsEquipped(item))
+                {
+                    itemUI.name = item.name + " - Equipped";
+                }
             }
         }
     }
