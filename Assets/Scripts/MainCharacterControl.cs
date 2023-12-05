@@ -15,9 +15,6 @@ public class MainCharacterControl : MonoBehaviour
 
     private Animator animator;
     public GameObject equippedSpritesRoot;
-    public SpriteRenderer hatRenderer;
-    public SpriteRenderer wigRenderer;
-    public SpriteRenderer clothesRenderer;
 
     private Rigidbody2D rigidbody2D;
 
@@ -36,6 +33,7 @@ public class MainCharacterControl : MonoBehaviour
     private const string nameOfMovementAction = "movement";
     private const string nameOfAccessInventoryAction = "accessInventory";
     private const string nameOfInteractAction = "interact";
+    private readonly string[] namesOfEquippableCategories = { "Clothes", "Hat", "Wig" };
     #endregion
 
     public void OutsiderSetsInteracting(GameObject who, bool value)
@@ -144,16 +142,36 @@ public class MainCharacterControl : MonoBehaviour
             string spriteSuffix = currentBodySpriteName.Replace("char1_walk", "");
             List<ShopItem> equippedItems = GetComponent<Inventory>().GetEquippedItems();
 
-            foreach (ShopItem item in equippedItems)
+            foreach (string category in namesOfEquippableCategories)
             {
-                string category = item.category.Name;
-                SpriteResolver equipmentSpriteResolver = equippedSpritesRoot.transform.Find(category).gameObject.GetComponent<SpriteResolver>();
+                bool foundCategory = false;
+                foreach (ShopItem item in equippedItems)
+                {
+                    if (category == item.category.Name)
+                    {
+                        SpriteResolver equipmentSpriteResolver = equippedSpritesRoot.transform.Find(category).gameObject.GetComponent<SpriteResolver>();
 
-                string equipmentSpritePrefix = item.name;
-                string equipmentSpriteName = equipmentSpritePrefix + spriteSuffix;
-                equipmentSpriteResolver.SetCategoryAndLabel(equipmentSpritePrefix, equipmentSpriteName);
+                        string equipmentSpritePrefix = item.name;
+                        string equipmentSpriteName = equipmentSpritePrefix + spriteSuffix;
+                        equipmentSpriteResolver.SetCategoryAndLabel(equipmentSpritePrefix, equipmentSpriteName);
+                        foundCategory = true;
+                        break;
+                    }
+                }
+                if (foundCategory == false)
+                {
+                    SpriteResolver equipmentSpriteResolver = equippedSpritesRoot.transform.Find(category).gameObject.GetComponent<SpriteResolver>();
+                    equipmentSpriteResolver.SetCategoryAndLabel("No Clothes", "none");
+                }
             }
-
+        }
+        else
+        {
+            foreach (string category in namesOfEquippableCategories)
+            {
+                SpriteResolver equipmentSpriteResolver = equippedSpritesRoot.transform.Find(category).gameObject.GetComponent<SpriteResolver>();
+                equipmentSpriteResolver.SetCategoryAndLabel("No Clothes", "none");
+            }
         }
     }
 
