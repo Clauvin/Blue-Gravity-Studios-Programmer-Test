@@ -189,8 +189,22 @@ public class BuyingShopUI : MonoBehaviour
     {
         if (currentPurchaser.SpendFunds(selectedItem.cost))
         {
-            //debt: check if adding the Item to the Inventory adds it or a copy of it.
             currentPurchaserInventory.ReceiveItem(selectedItem);
+            availableItems.Remove(selectedItem);
+
+            for (int childIndex = itemUIRoot.childCount - 1; childIndex >= 0; childIndex--)
+            {
+
+                ShopItem item = itemUIRoot.GetChild(childIndex).GetComponent<ShopItemPanel>().GetShopItem();
+                if (item == selectedItem)
+                {
+                    GameObject childGO = itemUIRoot.GetChild(childIndex).gameObject;
+                    Destroy(childGO);
+                    break;
+                }
+                
+            }
+
         }
         RefreshShopUICommons();
     }
