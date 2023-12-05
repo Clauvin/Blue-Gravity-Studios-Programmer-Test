@@ -190,7 +190,14 @@ public class InventoryUI : MonoBehaviour
 
     public void OnClickedToEquip()
     {
-        Debug.Log("Equipped = " + selectedItem);
+        if (currentInteracter.GetComponent<Inventory>().IsEquipped(selectedItem))
+        {
+            currentInteracter.GetComponent<Inventory>().UnequipItem(selectedItem);
+        }
+        else
+        {
+            currentInteracter.GetComponent<Inventory>().EquipItem(selectedItem);
+        }
 
         RefreshInventoryUICommons();
         RefreshInventoryUICategories();
