@@ -18,6 +18,11 @@ public class ShopItemPanel : MonoBehaviour
 
     ShopItem panelItem;
 
+    public ShopItem GetShopItem()
+    {
+        return panelItem;
+    }
+
     public void BindOnBuying(ShopItem item, UnityAction<ShopItem> onSelectedFunctionDoThis)
     {
         panelItem = item;
