@@ -194,7 +194,7 @@ public class SellingShopUI : MonoBehaviour
 
     public void OnClickedSale()
     {
-        if (selectedItem != null)
+        if (selectedItem != null && !currentSellerInventory.isEquipped(selectedItem))
         {
             currentSeller.RetrieveFunds(selectedItem.GetResaleVariableCost());
             currentSellerInventory.RemoveItem(selectedItem);
