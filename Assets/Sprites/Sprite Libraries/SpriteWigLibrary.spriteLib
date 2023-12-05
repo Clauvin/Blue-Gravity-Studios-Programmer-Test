@@ -17,8 +17,8 @@ MonoBehaviour:
     m_Hash: 2080186664
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: Entry
-      m_Hash: -354373004
+    - m_Name: none
+      m_Hash: 2140143823
       m_Sprite: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
@@ -190,16 +190,336 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 1780585166, guid: 31e13baa8b89b2b4fb44ae4a6286f896, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 32
-  - m_Name: New Category 1
-    m_Hash: 30752789
+  - m_Name: Buzzcut Wig
+    m_Hash: -300571626
     m_CategoryList: []
-    m_OverrideEntries: []
+    m_OverrideEntries:
+    - m_Name: Buzzcut Wig_downwards_0
+      m_Hash: -1510575524
+      m_Sprite: {fileID: -1300567494, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1300567494, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_1
+      m_Hash: -755940662
+      m_Sprite: {fileID: -1813635142, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1813635142, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_2
+      m_Hash: 1274549104
+      m_Sprite: {fileID: 271156486, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 271156486, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_3
+      m_Hash: 1023353830
+      m_Sprite: {fileID: 1570575379, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1570575379, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_4
+      m_Hash: -1566853563
+      m_Sprite: {fileID: 796068559, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 796068559, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_5
+      m_Hash: -711162157
+      m_Sprite: {fileID: 677145371, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 677145371, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_6
+      m_Hash: 1284888425
+      m_Sprite: {fileID: -137376243, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -137376243, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_downwards_7
+      m_Hash: 999483391
+      m_Sprite: {fileID: -1889133051, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1889133051, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_0
+      m_Hash: 1591179265
+      m_Sprite: {fileID: 1954606997, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1954606997, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_1
+      m_Hash: 701515927
+      m_Sprite: {fileID: 1929694375, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1929694375, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_2
+      m_Hash: -1327949523
+      m_Sprite: {fileID: 1628529625, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1628529625, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_3
+      m_Hash: -941741637
+      m_Sprite: {fileID: 1221363160, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1221363160, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_4
+      m_Hash: 1505410072
+      m_Sprite: {fileID: -2110406349, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2110406349, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_5
+      m_Hash: 784174222
+      m_Sprite: {fileID: -525564141, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -525564141, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_6
+      m_Hash: -1212883660
+      m_Sprite: {fileID: 650383773, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 650383773, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_leftwards_7
+      m_Hash: -1061950046
+      m_Sprite: {fileID: -1517923609, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1517923609, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_0
+      m_Hash: 924341627
+      m_Sprite: {fileID: -23117547, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -23117547, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_1
+      m_Hash: 1075799533
+      m_Sprite: {fileID: -1312186988, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1312186988, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_2
+      m_Hash: -652856233
+      m_Sprite: {fileID: -1005485709, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1005485709, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_3
+      m_Hash: -1374616383
+      m_Sprite: {fileID: 673196896, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 673196896, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_4
+      m_Hash: 813011298
+      m_Sprite: {fileID: -1598596077, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1598596077, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_5
+      m_Hash: 1198694900
+      m_Sprite: {fileID: -535001955, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -535001955, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_6
+      m_Hash: -562302898
+      m_Sprite: {fileID: -2137533672, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2137533672, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_rightwards_7
+      m_Hash: -1451441960
+      m_Sprite: {fileID: 904671261, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 904671261, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_0
+      m_Hash: -642702228
+      m_Sprite: {fileID: -1792731196, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1792731196, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_1
+      m_Hash: -1363798790
+      m_Sprite: {fileID: -1813806969, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1813806969, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_2
+      m_Hash: 935281984
+      m_Sprite: {fileID: 5892777, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5892777, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_3
+      m_Hash: 1085830614
+      m_Sprite: {fileID: 687287390, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 687287390, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_4
+      m_Hash: -555949963
+      m_Sprite: {fileID: 28737112, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 28737112, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_5
+      m_Hash: -1445211933
+      m_Sprite: {fileID: 841442311, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 841442311, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_6
+      m_Hash: 819102041
+      m_Sprite: {fileID: -1354959790, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1354959790, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+    - m_Name: Buzzcut Wig_upwards_7
+      m_Hash: 1205187023
+      m_Sprite: {fileID: 1521037440, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1521037440, guid: d37fbe46093524940a9648816a9be2d1, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 0
-  - m_Name: New Category 2
-    m_Hash: -1730408017
+    m_EntryOverrideCount: 32
+  - m_Name: Emo Wig
+    m_Hash: -1971336538
     m_CategoryList: []
-    m_OverrideEntries: []
+    m_OverrideEntries:
+    - m_Name: Emo Wig_downwards_0
+      m_Hash: 351326871
+      m_Sprite: {fileID: -1963732916, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1963732916, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_1
+      m_Hash: 1677189633
+      m_Sprite: {fileID: 337711246, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 337711246, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_2
+      m_Hash: -83971141
+      m_Sprite: {fileID: 771522201, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 771522201, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_3
+      m_Hash: -1913027795
+      m_Sprite: {fileID: -567981967, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -567981967, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_4
+      m_Hash: 329062030
+      m_Sprite: {fileID: 72583958, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 72583958, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_5
+      m_Hash: 1687823896
+      m_Sprite: {fileID: 1119289463, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1119289463, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_6
+      m_Hash: -40667230
+      m_Sprite: {fileID: -1701704813, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1701704813, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_downwards_7
+      m_Hash: -1969993932
+      m_Sprite: {fileID: -1237196915, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1237196915, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_0
+      m_Hash: -271460150
+      m_Sprite: {fileID: 838657593, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 838657593, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_1
+      m_Hash: -1730746276
+      m_Sprite: {fileID: 1869158425, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1869158425, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_2
+      m_Hash: 31439334
+      m_Sprite: {fileID: -545381618, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -545381618, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_3
+      m_Hash: 1993902448
+      m_Sprite: {fileID: -596355455, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -596355455, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_4
+      m_Hash: -390325037
+      m_Sprite: {fileID: 1412742330, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1412742330, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_5
+      m_Hash: -1615123387
+      m_Sprite: {fileID: -17884423, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -17884423, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_6
+      m_Hash: 112360959
+      m_Sprite: {fileID: -360005284, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -360005284, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_leftwards_7
+      m_Hash: 1907707241
+      m_Sprite: {fileID: -986335137, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -986335137, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_0
+      m_Hash: 991906019
+      m_Sprite: {fileID: 324577429, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 324577429, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_1
+      m_Hash: 1276672117
+      m_Sprite: {fileID: 1327288264, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1327288264, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_2
+      m_Hash: -720295473
+      m_Sprite: {fileID: -1146581366, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1146581366, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_3
+      m_Hash: -1575610023
+      m_Sprite: {fileID: -383301654, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -383301654, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_4
+      m_Hash: 1014140154
+      m_Sprite: {fileID: 1807077966, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1807077966, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_5
+      m_Hash: 1266007148
+      m_Sprite: {fileID: -2044540875, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2044540875, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_6
+      m_Hash: -763564586
+      m_Sprite: {fileID: -1036736482, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1036736482, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_rightwards_7
+      m_Hash: -1518609088
+      m_Sprite: {fileID: -702692562, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -702692562, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_0
+      m_Hash: -46915098
+      m_Sprite: {fileID: 809649982, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 809649982, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_1
+      m_Hash: -1976364688
+      m_Sprite: {fileID: -403198010, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -403198010, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_2
+      m_Hash: 322584778
+      m_Sprite: {fileID: 1393516890, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1393516890, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_3
+      m_Hash: 1681748060
+      m_Sprite: {fileID: 1257115543, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1257115543, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_4
+      m_Hash: -94771713
+      m_Sprite: {fileID: 1887984770, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1887984770, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_5
+      m_Hash: -1923164823
+      m_Sprite: {fileID: 1853838091, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1853838091, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_6
+      m_Hash: 341279955
+      m_Sprite: {fileID: -1694167910, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1694167910, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+    - m_Name: Emo Wig_upwards_7
+      m_Hash: 1666233413
+      m_Sprite: {fileID: 1733597927, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1733597927, guid: 70f42b1d82e9a9749b095adb6669b7e2, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 0
+    m_EntryOverrideCount: 32
   m_PrimaryLibraryGUID: 

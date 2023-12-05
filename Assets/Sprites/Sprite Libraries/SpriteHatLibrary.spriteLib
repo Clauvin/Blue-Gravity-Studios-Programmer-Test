@@ -17,8 +17,8 @@ MonoBehaviour:
     m_Hash: 2080186664
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: Entry
-      m_Hash: -354373004
+    - m_Name: none
+      m_Hash: 2140143823
       m_Sprite: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 1490393062, guid: 52858d0ff2a8db14b8d21399bbcffda7, type: 3}
