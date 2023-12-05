@@ -11,6 +11,8 @@ public interface InventoryInterface
     bool RemoveItem(ShopItem item);
 
     List<ShopItem> getShopItemList();
+
+    bool isEquipped(ShopItem equipment);
 }
 
 public class Inventory : MonoBehaviour, InventoryInterface
