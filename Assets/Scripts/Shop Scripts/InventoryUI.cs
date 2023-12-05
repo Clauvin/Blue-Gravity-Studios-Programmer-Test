@@ -100,7 +100,7 @@ public class InventoryUI : MonoBehaviour
                         }
                         else
                         {
-                            instantiatedShopItemPanel.GetComponentsInChildren<TMP_Text>()[0].text = item.name;
+                            instantiatedShopItemPanel.GetComponentsInChildren<TMP_Text>()[0].text = instantiatedShopItemPanel.GetShopItem().name;
                         }
                     }
 
